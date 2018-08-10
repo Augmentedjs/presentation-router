@@ -1,0 +1,404 @@
+<!-- start:source.tmpl.hbs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+		<title>router.js</title>
+		<link rel="icon" type="image/png" href="favicon.png"/>
+		<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+		<link type="text/css" rel="stylesheet" href="css/prism.min.css">
+		<link type="text/css" rel="stylesheet" href="css/template.min.css">
+			<style>
+				.page-header,
+				pre.code-toolbar > .toolbar:hover {
+					background-color: #607D8B;
+				}
+				.callout-primary,
+				.toc .nav > li > a:hover,
+				.toc .nav > li > a:focus,
+				.toc .nav > li.active > a,
+				.toc .nav > li.active > a:hover,
+				.toc .nav > li.active > a:focus,
+				pre.code-toolbar > .toolbar:hover {
+					border-left-color: #607D8B;
+				}
+				pre.code-toolbar > .toolbar:hover {
+					border-bottom-color: #607D8B;
+				}
+				.callout-primary h5,
+				.symbol-title.collapsible-symbol .toggle-icon,
+				.breadcrumb li a,
+				.toc .nav > li > a:hover,
+				.toc .nav > li > a:focus,
+				.toc .nav > li.active > a,
+				.toc .nav > li.active > a:hover,
+				.toc .nav > li.active > a:focus {
+					color: #607D8B;
+				}
+			</style>
+		<script type="text/javascript">
+			window.TEMPLATE_OPTIONS = {"includeDate":true,"dateFormat":"ddd MMM Do YYYY","systemName":"Augmented.js Next Presentation","systemSummary":"Augmented.js Next Presentation - Simply Development.","systemLogo":"img/jensen-silo-circle-small.png","systemColor":"#607D8B","navMembers":[{"kind":"class","title":"Classes","summary":"All documented classes."},{"kind":"external","title":"Externals","summary":"All documented external members."},{"kind":"global","title":"Globals","summary":"All documented globals."},{"kind":"mixin","title":"Mixins","summary":"All documented mixins."},{"kind":"interface","title":"Interfaces","summary":"All documented interfaces."},{"kind":"module","title":"Modules","summary":"All documented modules."},{"kind":"namespace","title":"Namespaces","summary":"All documented namespaces."},{"kind":"tutorial","title":"Tutorials","summary":"All available tutorials."}],"footer":"<a href='http://www.augmentedjs.com'>Augmented.js Homepage</a>","copyright":"","linenums":true,"collapseSymbols":false,"inverseNav":true,"inlineNav":false,"outputSourceFiles":true,"sourceRootPath":null,"disablePackagePath":true,"outputSourcePath":true,"showTableOfContents":true,"showAccessFilter":true,"analytics":null,"methodHeadingReturns":false,"sort":"linenum, longname, version, since","search":true,"favicon":"favicon.png","stylesheets":[],"scripts":[],"monospaceLinks":false,"cleverLinks":false,"logoFile":"public/images/jensen-silo-circle-small.png","navType":"vertical","protocol":"html://"};
+			window.DOCLET_TOC_ENABLED = false;
+			window.DOCLET_AFILTER_ENABLED = false;
+		</script>
+</head>
+<body>
+	<!-- start:navbar.hbs -->
+	<header class="navbar navbar-default navbar-fixed-top navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand branding-logo" href="index.html" style="background-image: url(img/jensen-silo-circle-small.png);">
+					Augmented.js Next Presentation
+				</a>
+				<!-- displayed on small devices -->
+				<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="navbar-collapse collapse" id="topNavigation">
+				<ul class="nav navbar-nav">
+								<li class="dropdown">
+									<a href="list_class.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="History.html">History</a></li>
+											<li><a href="Router.html">Router</a></li>
+									</ul>
+								</li>
+				</ul>
+					<!-- start:lunr-search-navbar.hbs -->
+					<form class="navbar-form navbar-right" role="search">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Search" id="lunr-search-input">
+							<div class="input-group-btn">
+								<button class="btn btn-default" id="lunr-search-submit">
+									<i class="glyphicon glyphicon-search"></i>
+								</button>
+							</div>
+						</div>
+					</form>
+					<!-- start:lunr-search-navbar.hbs -->		</div>
+		</div>
+	</header>
+	<!-- end:navbar.hbs -->		<div class="page-header">
+			<div class="container">
+				<span class="kind">source</span>
+				<h1><span class="name">router.js</span></h1>
+			</div>
+		</div>
+	<div class="container content">
+		<div class="row">
+			<div class="col-md-12 main-content">
+		<section class="source-section">
+			<article></article>
+			<pre class="prettyprint source language-javascript line-numbers"><code class="language-javascript">import Augmented from "augmentedjs-next";
+import History from "./history.js";
+import Dom from "presentation-dom";
+
+const _map = require("lodash.map");
+const _isRegExp = require("lodash.isregexp");
+
+// Cached regular expressions for matching named param parts and splatted
+// parts of route strings.
+const optionalParam = /\((.*?)\)/g;
+const namedParam    = /(\(\?)?:\w+/g;
+const splatParam    = /\*\w+/g;
+const escapeRegExp  = /[\-{}\[\]+?.,\\\^$|#\s]/g;
+
+/**
+ * Routers map faux-URLs to actions, and fire events when routes are
+ * matched. Creating a new one sets its `routes` hash, if not set statically.&lt;br/>
+ * Supports passing routes to the constructor as well as a transition flag.
+ * @example
+ * const router = new Router({
+ *    "routes": { ... },
+ *    "transition": { "in": #, "out": # }
+ * });
+ * @extends Augmented.Object
+ */
+class Router extends Augmented.Object {
+  constructor(options) {
+    if (!options) {
+      options = {};
+    }
+    super(options);
+    if (options.routes) {
+      this.routes = options.routes;
+    }
+    if (options.transition) {
+      this.transition = options.transition;
+    }
+    this.history = new History();
+    this._bindRoutes();
+    this.initialize(options);
+  };
+
+  /**
+   * Parse a query string and return as an object
+   * @param {string} queryString
+   * @returns {object} Object of the query params
+   * @static
+   */
+  static parseQuery(queryString) {
+    let query = {},
+        pairs = (queryString[0] === "?" ? queryString.substr(1) : queryString).split("&amp;"),
+        i = 0;
+    const l = pairs.length;
+
+    for (i = 0; i &lt; l; i++) {
+        const pair = pairs[i].split("=");
+        query[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1] || "");
+    }
+    return query;
+  };
+
+  /**
+   * @property {Presentation.View} view Read only property to current view
+   */
+  get view() {
+    return this._view;
+  };
+
+  /**
+   * Load a view safely and remove the last view by calling cleanup, then remove
+   * @param {View} view The View to load
+   */
+  loadView(view) {
+    //console.debug("router loadView");
+    if (view) {
+      this._view = view;
+      if (this.transition &amp;&amp; this.transition.in &amp;&amp; this._view.el) {
+        const view = this._view;
+        const renderView = () => {
+          Dom.removeClass(view.el, "transition-out");
+          Dom.addClass(view.el, "transition-in");
+          //console.debug("view transition-in");
+          if (view.render) {
+            view.render();
+          }
+          if (view.delegateEvents) {
+            view.delegateEvents();
+          }
+          return Promise.resolve(this);
+        };
+        Promise.all([
+          this.cleanup(),
+          window.setTimeout(renderView, this.transition.in)
+        ]);
+
+      } else {
+        if (this._view.render) {
+          this._view.render();
+        }
+        if (this._view.delegateEvents) {
+          this._view.delegateEvents();
+        }
+      }
+    }
+    return Promise.resolve(this);
+  };
+
+  /**
+   * Remove the last view by calling cleanup, then removes
+   */
+  cleanup() {
+    //console.debug(`router cleanup view '${(this._view) ? (this._view.name) : "no view"}'`);
+    if (this._view) {
+      //console.debug(`router cleanup view '${(this._view.el) ? (this._view.el) : "no el"}'`);
+      if (this.transition &amp;&amp; this.transition.out &amp;&amp; this._view.el) {
+        const view = this._view;
+        Dom.removeClass(view.el, "transition-in");
+        Dom.addClass(view.el, "transition-out");
+        //console.debug("view transition-out");
+        const cleanupView = () => {
+          // TODO: deprecated
+          if (view.cleanup) {
+            console.warn(`View ${view.name}'s "cleanup" method is deprecated,
+              please add code to "remove" method.`);
+            view.cleanup();
+          }
+          if (view.remove) {
+            //console.debug(`router removing view ${this._view.remove()}`);
+            view.remove();
+          }
+          //view = null;
+          return Promise.resolve(this);
+        };
+        window.setTimeout(cleanupView, this.transition.out);
+      } else {
+        // TODO: deprecated
+        if (this._view.cleanup) {
+          console.warn(`View ${view.name}'s "cleanup" method is deprecated,
+            please add code to "remove" method.`);
+          this._view.cleanup();
+        }
+        if (this._view.remove) {
+          //console.debug(`router removing view ${this._view.remove()}`);
+          this._view.remove();
+        }
+        this._view = null;
+      }
+    }
+    return Promise.resolve(this);
+  };
+
+  /**
+   * Initialize is an empty function by default. Override it with your own
+   * initialization logic.
+   */
+  initialize(options) {
+    return super.initialize(options);
+  };
+
+  /**
+   * Manually bind a single named route to a callback.
+   * @param {string} route The route
+   * @param {string} name The function binding name
+   * @param {function} callback binding function
+   * @example
+   * this.route('search/:query/p:num', 'search', (query, num) => {
+   *   ...
+   * });
+   */
+  route(route, name, callback) {
+    if (!_isRegExp(route)) {
+      route = this._routeToRegExp(route);
+    }
+    if (Augmented.isFunction(name)) {
+      callback = name;
+      name = '';
+    }
+    if (!callback) {
+      callback = this[name];
+    }
+    const router = this;
+
+    this.history.route(route, (fragment) => {
+      const args = router._extractParameters(route, fragment);
+
+      if (router.execute(callback, args, name) !== false) {
+        router.trigger.apply(router, ['route:' + name].concat(args));
+        router.trigger('route', name, args);
+        this.history.trigger('route', router, name, args);
+      }
+    });
+    return this;
+  };
+
+  /**
+   * Execute a route handler with the provided parameters.  This is an
+   * excellent place to do pre-route setup or post-route cleanup.
+   * @param {function} callback binding function
+   * @param {array} args The arges passed
+   */
+  execute(callback, args) {
+    if (callback) {
+      callback.apply(this, args);
+    }
+  };
+
+  /**
+   * Simple proxy to `history` to save a fragment into the history.
+   * @param {string} fragment route fragment
+   * @param {object} options any options to pass
+   */
+  navigate(fragment, options) {
+    this.history.navigate(fragment, options);
+    return { "routes": this.routes };
+  };
+
+  /**
+   * Start the history using browser History API
+   * @param {object} options any options to pass
+   */
+  startHistory(options) {
+    if (!this.history.started) {
+      this.history.start(options);
+    }
+    return true;
+  };
+
+  // Bind all defined routes to `history`. We have to reverse the
+  // order of the routes here to support behavior where the most general
+  // routes can be defined at the bottom of the route map.
+  _bindRoutes() {
+    if (!this.routes) {
+      return;
+    }
+    this.routes = Augmented.result(this, "routes");
+    let route,
+        routes = Object.keys(this.routes);
+    while ((route = routes.pop()) != null) {
+      this.route(route, this.routes[route]);
+    }
+  };
+
+  // Convert a route string into a regular expression, suitable for matching
+  // against the current location hash.
+  _routeToRegExp(route) {
+    route = route.replace(escapeRegExp, '\\$&amp;')
+                 .replace(optionalParam, '(?:$1)?')
+                 .replace(namedParam, (match, optional) => {
+                   return optional ? match : '([^/?]+)';
+                 })
+                 .replace(splatParam, '([^?]*?)');
+    return new RegExp('^' + route + '(?:\\?([\\s\\S]*))?$');
+  };
+
+  // Given a route, and a URL fragment that it matches, return the array of
+  // extracted decoded parameters. Empty or unmatched parameters will be
+  // treated as `null` to normalize cross-browser behavior.
+  _extractParameters(route, fragment) {
+    let params = route.exec(fragment).slice(1);
+    return _map(params, (param, i) => {
+      // Don't decode the search params.
+      if (i === params.length - 1) {
+        return param || null;
+      }
+      return param ? decodeURIComponent(param) : null;
+    });
+  };
+};
+
+export default Router;
+</code></pre>
+		</section>
+			</div>
+		</div>
+	</div>
+	<footer>
+				<div class="footer-option"><a href='http://www.augmentedjs.com'>Augmented.js Homepage</a></div>
+			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Thu Aug 9th 2018 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
+	</footer>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/clipboard.min.js"></script>
+	<script src="js/prism.min.js"></script>
+	<script src="js/template.min.js"></script>
+		<!-- start:lunr-search-modal.hbs -->
+		<div class="modal fade" id="lunr-search-modal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title">Search results</h4>
+					</div>
+					<div class="modal-body" id="lunr-search-body">
+					</div>
+					<div class="modal-footer" id="lunr-search-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div>
+		<!-- end:lunr-search-modal.hbs -->		<script src="js/lunr.min.js"></script>
+	
+</body>
+</html>
+<!-- end:source.tmpl.hbs -->
