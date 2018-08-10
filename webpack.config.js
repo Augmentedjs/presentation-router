@@ -44,10 +44,10 @@ module.exports = {
       amd: 'lodash.isregexp',
       root: 'lodash.isregexp'
     },
-    'augmented-next': {
-      commonjs: 'Augmented',
-      commonjs2: 'Augmented',
-      amd: 'Augmented',
+    'augmentedjs-next': {
+      commonjs: 'augmentedjs-next',
+      commonjs2: 'augmentedjs-next',
+      amd: 'augmentedjs-next',
       root: 'Augmented'
     }
   },
