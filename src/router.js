@@ -12,6 +12,86 @@ const namedParam    = /(\(\?)?:\w+/g;
 const splatParam    = /\*\w+/g;
 const escapeRegExp  = /[\-{}\[\]+?.,\\\^$|#\s]/g;
 
+const handleLoadView = async (view, router) => {
+  if (!router) {
+    console.warn("No router passed.");
+    return Promise.resolve();
+  }
+  if (view) {
+    const renderView = () => {
+      Dom.addClass(view.el, "transition-in");
+      if (view.render) {
+        view.render();
+      }
+      if (view.delegateEvents) {
+        view.delegateEvents();
+      }
+      return view;
+    };
+
+    const oldView = router._view;
+    if (router.transition && router.transition.in) {
+      await Dom.removeClass(oldView.el, "transition-out");
+      if (oldView) {
+        console.debug("Old view " + router._view);
+        await router.cleanup();
+      }
+
+      await window.setTimeout(renderView, router.transition.in);
+      router._view = view;
+      console.debug("new view " + JSON.stringify(router._view));
+    } else {
+      if (oldView) {
+        console.debug("Old view " + router._view);
+        await router.cleanup();
+      }
+      await renderView(view);
+      if (view.delegateEvents) {
+        view.delegateEvents();
+      }
+      router._view = view;
+      console.debug("new view " + JSON.stringify(router._view));
+    }
+  } else {
+    console.warn("No view passed.");
+  }
+  return Promise.resolve(router);
+};
+
+const handleCleanup = async (router) => {
+  if (!router) {
+    console.warn("No router passed.");
+    return Promise.resolve();
+  }
+  if (router._view) {
+    console.debug(`router cleanup view '${(router._view.el) ? (router._view.el) : "no el"}'`);
+    if (router.transition && router.transition.out && router._view.el) {
+      const view = router._view;
+      await Dom.removeClass(view.el, "transition-in");
+      await Dom.addClass(view.el, "transition-out");
+      //console.debug("view transition-out");
+      const cleanupView = () => {
+        if (view.remove) {
+          //console.debug(`router removing view ${this._view.remove()}`);
+          view.remove();
+        }
+        return router;
+      };
+      await window.setTimeout(cleanupView, router.transition.out);
+      router._view = null;
+    } else {
+      if (router._view.remove) {
+        //console.debug(`router removing view ${this._view.remove()}`);
+        await router._view.remove();
+      }
+      router._view = null;
+    }
+  } else {
+    console.warn("No view to clean up.");
+  }
+  return Promise.resolve(router);
+};
+
 /**
  * Routers map faux-URLs to actions, and fire events when routes are
  * matched. Creating a new one sets its `routes` hash, if not set statically.<br/>
@@ -70,83 +150,58 @@ class Router extends Augmented.Object {
    * Load a view safely and remove the last view by calling cleanup, then remove
    * @param {View} view The View to load
    */
-  loadView(view) {
-    //console.debug("router loadView");
-    if (view) {
-      this._view = view;
-      if (this.transition && this.transition.in && this._view.el) {
-        const view = this._view;
-        const renderView = () => {
-          Dom.removeClass(view.el, "transition-out");
-          Dom.addClass(view.el, "transition-in");
-          //console.debug("view transition-in");
-          if (view.render) {
-            view.render();
+  async loadView(view) {
+    try {
+      console.debug("router loadView");
+      if (view) {
+        const oldView = this._view;
+        if (this.transition && this.transition.in) {
+          //console.debug("Transition");
+          const renderView = () => {
+            Dom.addClass(view.el, "transition-in");
+            if (view.render) {
+              view.render();
+            }
+            if (view.delegateEvents) {
+              view.delegateEvents();
+            }
+            return view;
+          };
+          await Dom.removeClass(oldView.el, "transition-out");
+          if (oldView) {
+            console.debug("Old view " + this._view);
+            await this.cleanup();
           }
+          await window.setTimeout(renderView, this.transition.in);
+          this._view = view;
+          console.debug("new view " + JSON.stringify(this._view));
+        } else {
+          if (oldView) {
+            console.debug("Old view " + this._view);
+            await this.cleanup();
+          }
+          await view.render();
           if (view.delegateEvents) {
             view.delegateEvents();
           }
-          return Promise.resolve(this);
-        };
-        Promise.all([
-          this.cleanup(),
-          window.setTimeout(renderView, this.transition.in)
-        ]);
-
+          this._view = view;
+          //console.debug("new view " + JSON.stringify(this._view));
+        }
       } else {
-        if (this._view.render) {
-          this._view.render();
-        }
-        if (this._view.delegateEvents) {
-          this._view.delegateEvents();
-        }
+        console.warn("No view passed.");
       }
+    } catch(e) {
+      console.error(e);
     }
-    return Promise.resolve(this);
+    return this;
   };
 
   /**
    * Remove the last view by calling cleanup, then removes
    */
   cleanup() {
-    //console.debug(`router cleanup view '${(this._view) ? (this._view.name) : "no view"}'`);
-    if (this._view) {
-      //console.debug(`router cleanup view '${(this._view.el) ? (this._view.el) : "no el"}'`);
-      if (this.transition && this.transition.out && this._view.el) {
-        const view = this._view;
-        Dom.removeClass(view.el, "transition-in");
-        Dom.addClass(view.el, "transition-out");
-        //console.debug("view transition-out");
-        const cleanupView = () => {
-          // TODO: deprecated
-          if (view.cleanup) {
-            console.warn(`View ${view.name}'s "cleanup" method is deprecated,
-              please add code to "remove" method.`);
-            view.cleanup();
-          }
-          if (view.remove) {
-            //console.debug(`router removing view ${this._view.remove()}`);
-            view.remove();
-          }
-          //view = null;
-          return Promise.resolve(this);
-        };
-        window.setTimeout(cleanupView, this.transition.out);
-      } else {
-        // TODO: deprecated
-        if (this._view.cleanup) {
-          console.warn(`View ${view.name}'s "cleanup" method is deprecated,
-            please add code to "remove" method.`);
-          this._view.cleanup();
-        }
-        if (this._view.remove) {
-          //console.debug(`router removing view ${this._view.remove()}`);
-          this._view.remove();
-        }
-        this._view = null;
-      }
-    }
-    return Promise.resolve(this);
+    console.debug(`router cleanup view '${(this._view) ? (this._view.name) : "no view"}'`);
+    return handleCleanup(this);
   };
 
   /**

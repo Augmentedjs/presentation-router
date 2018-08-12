@@ -1,6 +1,6 @@
 {
   "name": "presentation-router",
-  "version": "2.6.0",
+  "version": "2.6.1",
   "description": "The Augmented.js Next - Presentation Router Module.",
   "main": "dist/presentation-router.js",
   "scripts": {
