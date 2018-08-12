@@ -1,6 +1,6 @@
 {
   "name": "presentation-router",
-  "version": "2.6.1",
+  "version": "2.6.2",
   "description": "The Augmented.js Next - Presentation Router Module.",
   "main": "dist/presentation-router.js",
   "scripts": {
@@ -47,7 +47,7 @@
     "augmentedjs-next": "^2.2.0",
     "lodash.isregexp": "^4.0.1",
     "lodash.map": "^4.6.0",
-    "presentation-dom": "^2.5.2"
+    "presentation-dom": "^2.7.1"
   },
   "bugs": {
     "url": "https://github.com/Augmentedjs/presentation-router/issues"

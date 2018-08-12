@@ -12,40 +12,6 @@ const namedParam    = /(\(\?)?:\w+/g;
 const splatParam    = /\*\w+/g;
 const escapeRegExp  = /[\-{}\[\]+?.,\\\^$|#\s]/g;
 
-const handleCleanup = async (router) => {
-  if (!router) {
-    console.warn("No router passed.");
-    return Promise.resolve();
-  }
-  if (router._view) {
-    //console.debug(`router cleanup view '${(router._view.el) ? (router._view.el) : "no el"}'`);
-    if (router.transition && router.transition.out && router._view.el) {
-      const view = router._view;
-      await Dom.removeClass(view.el, "transition-in");
-      await Dom.addClass(view.el, "transition-out");
-      //console.debug("view transition-out");
-      const cleanupView = () => {
-        if (view.remove) {
-          //console.debug(`router removing view ${this._view.remove()}`);
-          view.remove();
-        }
-        return router;
-      };
-      await window.setTimeout(cleanupView, router.transition.out);
-      router._view = null;
-    } else {
-      if (router._view.remove) {
-        //console.debug(`router removing view ${this._view.remove()}`);
-        await router._view.remove();
-      }
-      router._view = null;
-    }
-  } else {
-    //console.warn("No view to clean up.");
-  }
-  return Promise.resolve(router);
-};
-
 /**
  * Routers map faux-URLs to actions, and fire events when routes are
  * matched. Creating a new one sets its `routes` hash, if not set statically.<br/>
@@ -111,32 +77,35 @@ class Router extends Augmented.Object {
         const oldView = this._view;
         if (this.transition && this.transition.in) {
           //console.debug("Transition");
-          const renderView = () => {
-            Dom.addClass(view.el, "transition-in");
+          const renderView = async () => {
+            if (Dom.containsClass(view.el, "transition-out")) {
+              await Dom.replaceClass(view.el, "transition-out", "transition-in");
+            } else {
+              await Dom.addClass(view.el, "transition-in");
+            }
+
             if (view.render) {
-              view.render();
+              await view.render();
             }
             if (view.delegateEvents) {
-              view.delegateEvents();
+              await view.delegateEvents();
             }
+            await Dom.removeClass(view.el, "transition-in");
             return view;
           };
-          await Dom.removeClass(oldView.el, "transition-out");
+
           if (oldView) {
-            //console.debug("Old view " + this._view);
             await this.cleanup();
           }
           await window.setTimeout(renderView, this.transition.in);
           this._view = view;
-          //console.debug("new view " + JSON.stringify(this._view));
         } else {
           if (oldView) {
-            //console.debug("Old view " + this._view);
-            await this.cleanup();
+            await this.cleanup(oldView);
           }
           await view.render();
           if (view.delegateEvents) {
-            view.delegateEvents();
+            await view.delegateEvents();
           }
           this._view = view;
           //console.debug("new view " + JSON.stringify(this._view));
@@ -153,9 +122,40 @@ class Router extends Augmented.Object {
   /**
    * Remove the last view by calling cleanup, then removes
    */
-  cleanup() {
+  async cleanup(oldView) {
     //console.debug(`router cleanup view '${(this._view) ? (this._view.name) : "no view"}'`);
-    return handleCleanup(this);
+    if (oldView || this._view) {
+      //console.debug(`router cleanup view '${(router._view.el) ? (router._view.el) : "no el"}'`);
+      const view = (oldView) ? oldView : this._view;
+      if (this.transition && this.transition.out && view.el) {
+        //const view = router._view;
+        //console.debug("view transition-out");
+        const cleanupView = async () => {
+          if (Dom.containsClass(view.el, "transition-in")) {
+            await Dom.replaceClass(view.el, "transition-in", "transition-out");
+          } else {
+            await Dom.addClass(view.el, "transition-out");
+          }
+          if (view.remove) {
+            //console.debug(`router removing view ${this._view.remove()}`);
+            await view.remove();
+          }
+          await Dom.removeClass(view.el, "transition-out");
+          return view;
+        };
+        await window.setTimeout(cleanupView, this.transition.out);
+        this._view = null;
+      } else {
+        if (this.view.remove) {
+          //console.debug(`router removing view ${this._view.remove()}`);
+          await this.view.remove();
+        }
+        this._view = null;
+      }
+    } else {
+      //console.warn("No view to clean up.");
+    }
+    return this;
   };
 
   /**
