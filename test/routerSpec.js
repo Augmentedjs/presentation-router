@@ -1,11 +1,14 @@
 class TestView {
 	constructor() {
+		console.log("Constructor");
 	};
 	render() {
+		console.log("Render");
 		return this;
 	};
 
 	remove() {
+		console.log("Remove");
 		return this;
 	};
 
