@@ -1,4 +1,5 @@
-import * as Augmented from "augmentedjs-next";
+import { AugmentedObject } from "next-core-object";
+import { extend } from "next-core-utilities";
 
 //const _some = require("lodash.some");
 
@@ -20,7 +21,7 @@ const PATH_STRIPPER = /#.*$/;
  * <br/>Inspired By Backbone.js - Thank you! <span>😍</span>
  * @extends Augmented.Object
  */
-class History extends Augmented.Object {
+class History extends AugmentedObject {
   constructor(options) {
     super(options);
     this.handlers = [];
@@ -105,7 +106,7 @@ class History extends Augmented.Object {
 
     // Figure out the initial configuration. Do we need an iframe?
     // Is pushState desired ... is it available?
-    this.options          = Augmented.Utility.extend({root: '/'}, this.options, options);
+    this.options          = extend({root: '/'}, this.options, options);
     this.root             = this.options.root;
     this._wantsHashChange = this.options.hashChange !== false;
     this._hasHashChange   = 'onhashchange' in window && (document.documentMode === void 0 || document.documentMode > 7);

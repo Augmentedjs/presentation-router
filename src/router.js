@@ -1,4 +1,5 @@
-import Augmented from "augmentedjs-next";
+import { AugmentedObject } from "next-core-object";
+import { result, isFunction } from "next-core-utilities";
 import History from "./history.js";
 import Dom from "presentation-dom";
 
@@ -23,7 +24,7 @@ const escapeRegExp  = /[\-{}\[\]+?.,\\\^$|#\s]/g;
  * });
  * @extends Augmented.Object
  */
-class Router extends Augmented.Object {
+class Router extends AugmentedObject {
   constructor(options) {
     if (!options) {
       options = {};
@@ -180,7 +181,7 @@ class Router extends Augmented.Object {
     if (!_isRegExp(route)) {
       route = this._routeToRegExp(route);
     }
-    if (Augmented.isFunction(name)) {
+    if (isFunction(name)) {
       callback = name;
       name = '';
     }
@@ -241,7 +242,7 @@ class Router extends Augmented.Object {
     if (!this.routes) {
       return;
     }
-    this.routes = Augmented.result(this, "routes");
+    this.routes = result(this, "routes");
     let route,
         routes = Object.keys(this.routes);
     while ((route = routes.pop()) != null) {

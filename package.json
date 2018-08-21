@@ -1,6 +1,6 @@
 {
   "name": "presentation-router",
-  "version": "2.6.2",
+  "version": "2.6.3",
   "description": "The Augmented.js Next - Presentation Router Module.",
   "main": "dist/presentation-router.js",
   "scripts": {
@@ -44,9 +44,10 @@
     "webpack-cli": "^2.1.5"
   },
   "dependencies": {
-    "augmentedjs-next": "^2.2.0",
     "lodash.isregexp": "^4.0.1",
     "lodash.map": "^4.6.0",
+    "next-core-object": "^2.5.4",
+    "next-core-utilities": "^2.5.5",
     "presentation-dom": "^2.7.1"
   },
   "bugs": {
