@@ -77,28 +77,33 @@ class Router extends AugmentedObject {
       if (view) {
         const oldView = this._view;
         if (this.transition && this.transition.in) {
-          //console.debug("Transition");
-          const renderView = async () => {
-            if (Dom.containsClass(view.el, "transition-out")) {
-              await Dom.replaceClass(view.el, "transition-out", "transition-in");
-            } else {
-              await Dom.addClass(view.el, "transition-in");
-            }
-
-            if (view.render) {
-              await view.render();
-            }
-            if (view.delegateEvents) {
-              await view.delegateEvents();
-            }
-            await Dom.removeClass(view.el, "transition-in");
-            return view;
-          };
-
+          //await console.debug("have old view", (oldView) );
           if (oldView) {
+
+            await Dom.addClass(view.el, "transition-out");
+            //await console.debug("calling cleanup");
             await this.cleanup();
+            //await console.debug("Just cleaned up");
           }
-          await window.setTimeout(renderView, this.transition.in);
+          await window.setTimeout(() => {
+            // wait
+            //console.debug("waiting...");
+          }, this.transition.out);
+
+          if (view.render) {
+            await window.setTimeout(() => {
+              // wait
+              //console.debug("waiting...");
+              //console.log("el", view.el);
+              Dom.removeClass(view.el, "transition-out");
+              view.render();
+            }, this.transition.in);
+
+          }
+          if (view.delegateEvents) {
+            await view.delegateEvents();
+          }
+
           this._view = view;
         } else {
           if (oldView) {
@@ -129,19 +134,19 @@ class Router extends AugmentedObject {
       //console.debug(`router cleanup view '${(router._view.el) ? (router._view.el) : "no el"}'`);
       const view = (oldView) ? oldView : this._view;
       if (this.transition && this.transition.out && view.el) {
-        //const view = router._view;
+
         //console.debug("view transition-out");
         const cleanupView = async () => {
-          if (Dom.containsClass(view.el, "transition-in")) {
-            await Dom.replaceClass(view.el, "transition-in", "transition-out");
-          } else {
-            await Dom.addClass(view.el, "transition-out");
-          }
+          //if (Dom.containsClass(view.el, "transition-in")) {
+          //  await Dom.replaceClass(view.el, "transition-in", "transition-out");
+          //} else {
+          //  await Dom.addClass(view.el, "transition-out");
+          //}
           if (view.remove) {
-            //console.debug(`router removing view ${this._view.remove()}`);
+            //await console.debug(`router removing view ${this._view.remove()}`);
             await view.remove();
           }
-          await Dom.removeClass(view.el, "transition-out");
+          //await Dom.removeClass(view.el, "transition-out");
           return view;
         };
         await window.setTimeout(cleanupView, this.transition.out);

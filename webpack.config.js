@@ -55,12 +55,6 @@ module.exports = {
       commonjs2: 'lodash.isregexp',
       amd: 'lodash.isregexp',
       root: 'lodash.isregexp'
-    },
-    'augmentedjs-next': {
-      commonjs: 'augmentedjs-next',
-      commonjs2: 'augmentedjs-next',
-      amd: 'augmentedjs-next',
-      root: 'Augmented'
     }
   },
   stats: "errors-only",
