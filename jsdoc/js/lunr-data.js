@@ -108,16 +108,60 @@ window.lunrData = {
           "router#view",
           "view"
         ],
-        "Router.html#navigate": [
-          "fragment",
+        "Router.html#.parseQuery": [
           "function",
-          "histori",
-          "navig",
-          "option",
-          "proxi",
-          "router#navig",
-          "save",
-          "simpl"
+          "lt;static&gt",
+          "object",
+          "pars",
+          "parsequeri",
+          "queri",
+          "querystr",
+          "return",
+          "router.parsequeri",
+          "string"
+        ],
+        "Router.html#loadView": [
+          "call",
+          "cleanup",
+          "function",
+          "last",
+          "load",
+          "loadview",
+          "lt;async&gt",
+          "remov",
+          "router#loadview",
+          "safe",
+          "view"
+        ],
+        "Router.html#cleanup": [
+          "call",
+          "cleanup",
+          "function",
+          "last",
+          "lt;async&gt",
+          "remov",
+          "router#cleanup",
+          "view"
+        ],
+        "Router.html#initialize": [
+          "default",
+          "empti",
+          "function",
+          "initi",
+          "logic",
+          "overrid",
+          "owniniti",
+          "router#initi"
+        ],
+        "Router.html#route": [
+          "bind",
+          "callback",
+          "function",
+          "manual",
+          "name",
+          "rout",
+          "router#rout",
+          "singl"
         ],
         "Router.html#execute": [
           "anexcel",
@@ -136,15 +180,16 @@ window.lunrData = {
           "router#execut",
           "setup"
         ],
-        "Router.html#route": [
-          "bind",
-          "callback",
+        "Router.html#navigate": [
+          "fragment",
           "function",
-          "manual",
-          "name",
-          "rout",
-          "router#rout",
-          "singl"
+          "histori",
+          "navig",
+          "option",
+          "proxi",
+          "router#navig",
+          "save",
+          "simpl"
         ],
         "Router.html#startHistory": [
           "api",
@@ -156,51 +201,6 @@ window.lunrData = {
           "start",
           "starthistori",
           "us"
-        ],
-        "Router.html#cleanup": [
-          "call",
-          "cleanup",
-          "function",
-          "last",
-          "lt;async&gt",
-          "remov",
-          "router#cleanup",
-          "view"
-        ],
-        "Router.html#loadView": [
-          "call",
-          "cleanup",
-          "function",
-          "last",
-          "load",
-          "loadview",
-          "lt;async&gt",
-          "remov",
-          "router#loadview",
-          "safe",
-          "view"
-        ],
-        "Router.html#.parseQuery": [
-          "function",
-          "lt;static&gt",
-          "object",
-          "pars",
-          "parsequeri",
-          "queri",
-          "querystr",
-          "return",
-          "router.parsequeri",
-          "string"
-        ],
-        "Router.html#initialize": [
-          "default",
-          "empti",
-          "function",
-          "initi",
-          "logic",
-          "overrid",
-          "owniniti",
-          "router#initi"
         ]
       },
       "length": 14
@@ -507,6 +507,17 @@ window.lunrData = {
                 }
               }
             },
+            "m": {
+              "docs": {},
+              "e": {
+                "docs": {
+                  "Router.html#route": {
+                    "ref": "Router.html#route",
+                    "tf": 33.33333333333333
+                  }
+                }
+              }
+            },
             "v": {
               "docs": {},
               "i": {
@@ -517,17 +528,6 @@ window.lunrData = {
                       "ref": "Router.html#navigate",
                       "tf": 683.3333333333334
                     }
-                  }
-                }
-              }
-            },
-            "m": {
-              "docs": {},
-              "e": {
-                "docs": {
-                  "Router.html#route": {
-                    "ref": "Router.html#route",
-                    "tf": 33.33333333333333
                   }
                 }
               }
@@ -565,17 +565,6 @@ window.lunrData = {
             },
             "o": {
               "docs": {},
-              "x": {
-                "docs": {},
-                "i": {
-                  "docs": {
-                    "Router.html#navigate": {
-                      "ref": "Router.html#navigate",
-                      "tf": 8.333333333333332
-                    }
-                  }
-                }
-              },
               "v": {
                 "docs": {},
                 "i": {
@@ -586,6 +575,17 @@ window.lunrData = {
                         "ref": "Router.html#execute",
                         "tf": 3.8461538461538463
                       }
+                    }
+                  }
+                }
+              },
+              "x": {
+                "docs": {},
+                "i": {
+                  "docs": {
+                    "Router.html#navigate": {
+                      "ref": "Router.html#navigate",
+                      "tf": 8.333333333333332
                     }
                   }
                 }
@@ -662,23 +662,6 @@ window.lunrData = {
             },
             "r": {
               "docs": {},
-              "a": {
-                "docs": {},
-                "m": {
-                  "docs": {},
-                  "e": {
-                    "docs": {},
-                    "t": {
-                      "docs": {
-                        "Router.html#execute": {
-                          "ref": "Router.html#execute",
-                          "tf": 3.8461538461538463
-                        }
-                      }
-                    }
-                  }
-                }
-              },
               "s": {
                 "docs": {
                   "Router.html#.parseQuery": {
@@ -704,6 +687,23 @@ window.lunrData = {
                               }
                             }
                           }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "a": {
+                "docs": {},
+                "m": {
+                  "docs": {},
+                  "e": {
+                    "docs": {},
+                    "t": {
+                      "docs": {
+                        "Router.html#execute": {
+                          "ref": "Router.html#execute",
+                          "tf": 3.8461538461538463
                         }
                       }
                     }
@@ -756,24 +756,6 @@ window.lunrData = {
                 }
               }
             },
-            "m": {
-              "docs": {},
-              "o": {
-                "docs": {},
-                "v": {
-                  "docs": {
-                    "Router.html#cleanup": {
-                      "ref": "Router.html#cleanup",
-                      "tf": 16.666666666666664
-                    },
-                    "Router.html#loadView": {
-                      "ref": "Router.html#loadView",
-                      "tf": 11.11111111111111
-                    }
-                  }
-                }
-              }
-            },
             "t": {
               "docs": {},
               "u": {
@@ -790,6 +772,24 @@ window.lunrData = {
                   }
                 }
               }
+            },
+            "m": {
+              "docs": {},
+              "o": {
+                "docs": {},
+                "v": {
+                  "docs": {
+                    "Router.html#loadView": {
+                      "ref": "Router.html#loadView",
+                      "tf": 11.11111111111111
+                    },
+                    "Router.html#cleanup": {
+                      "ref": "Router.html#cleanup",
+                      "tf": 16.666666666666664
+                    }
+                  }
+                }
+              }
             }
           },
           "o": {
@@ -802,13 +802,13 @@ window.lunrData = {
                     "ref": "Router.html",
                     "tf": 6.521739130434782
                   },
-                  "Router.html#execute": {
-                    "ref": "Router.html#execute",
-                    "tf": 11.538461538461538
-                  },
                   "Router.html#route": {
                     "ref": "Router.html#route",
                     "tf": 708.3333333333334
+                  },
+                  "Router.html#execute": {
+                    "ref": "Router.html#execute",
+                    "tf": 11.538461538461538
                   }
                 },
                 "e": {
@@ -839,20 +839,92 @@ window.lunrData = {
                           }
                         }
                       },
-                      "n": {
+                      "l": {
                         "docs": {},
-                        "a": {
+                        "o": {
                           "docs": {},
-                          "v": {
+                          "a": {
                             "docs": {},
-                            "i": {
+                            "d": {
                               "docs": {},
-                              "g": {
+                              "v": {
+                                "docs": {},
+                                "i": {
+                                  "docs": {},
+                                  "e": {
+                                    "docs": {},
+                                    "w": {
+                                      "docs": {
+                                        "Router.html#loadView": {
+                                          "ref": "Router.html#loadView",
+                                          "tf": 1150
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "c": {
+                        "docs": {},
+                        "l": {
+                          "docs": {},
+                          "e": {
+                            "docs": {},
+                            "a": {
+                              "docs": {},
+                              "n": {
+                                "docs": {},
+                                "u": {
+                                  "docs": {},
+                                  "p": {
+                                    "docs": {
+                                      "Router.html#cleanup": {
+                                        "ref": "Router.html#cleanup",
+                                        "tf": 1150
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "i": {
+                        "docs": {},
+                        "n": {
+                          "docs": {},
+                          "i": {
+                            "docs": {},
+                            "t": {
+                              "docs": {},
+                              "i": {
                                 "docs": {
-                                  "Router.html#navigate": {
-                                    "ref": "Router.html#navigate",
+                                  "Router.html#initialize": {
+                                    "ref": "Router.html#initialize",
                                     "tf": 1150
                                   }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "r": {
+                        "docs": {},
+                        "o": {
+                          "docs": {},
+                          "u": {
+                            "docs": {},
+                            "t": {
+                              "docs": {
+                                "Router.html#route": {
+                                  "ref": "Router.html#route",
+                                  "tf": 1150
                                 }
                               }
                             }
@@ -882,17 +954,20 @@ window.lunrData = {
                           }
                         }
                       },
-                      "r": {
+                      "n": {
                         "docs": {},
-                        "o": {
+                        "a": {
                           "docs": {},
-                          "u": {
+                          "v": {
                             "docs": {},
-                            "t": {
-                              "docs": {
-                                "Router.html#route": {
-                                  "ref": "Router.html#route",
-                                  "tf": 1150
+                            "i": {
+                              "docs": {},
+                              "g": {
+                                "docs": {
+                                  "Router.html#navigate": {
+                                    "ref": "Router.html#navigate",
+                                    "tf": 1150
+                                  }
                                 }
                               }
                             }
@@ -933,81 +1008,6 @@ window.lunrData = {
                                         }
                                       }
                                     }
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
-                      },
-                      "c": {
-                        "docs": {},
-                        "l": {
-                          "docs": {},
-                          "e": {
-                            "docs": {},
-                            "a": {
-                              "docs": {},
-                              "n": {
-                                "docs": {},
-                                "u": {
-                                  "docs": {},
-                                  "p": {
-                                    "docs": {
-                                      "Router.html#cleanup": {
-                                        "ref": "Router.html#cleanup",
-                                        "tf": 1150
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
-                      },
-                      "l": {
-                        "docs": {},
-                        "o": {
-                          "docs": {},
-                          "a": {
-                            "docs": {},
-                            "d": {
-                              "docs": {},
-                              "v": {
-                                "docs": {},
-                                "i": {
-                                  "docs": {},
-                                  "e": {
-                                    "docs": {},
-                                    "w": {
-                                      "docs": {
-                                        "Router.html#loadView": {
-                                          "ref": "Router.html#loadView",
-                                          "tf": 1150
-                                        }
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
-                      },
-                      "i": {
-                        "docs": {},
-                        "n": {
-                          "docs": {},
-                          "i": {
-                            "docs": {},
-                            "t": {
-                              "docs": {},
-                              "i": {
-                                "docs": {
-                                  "Router.html#initialize": {
-                                    "ref": "Router.html#initialize",
-                                    "tf": 1150
                                   }
                                 }
                               }
@@ -1258,17 +1258,6 @@ window.lunrData = {
           },
           "a": {
             "docs": {},
-            "v": {
-              "docs": {},
-              "e": {
-                "docs": {
-                  "Router.html#navigate": {
-                    "ref": "Router.html#navigate",
-                    "tf": 8.333333333333332
-                  }
-                }
-              }
-            },
             "f": {
               "docs": {},
               "e": {
@@ -1276,6 +1265,17 @@ window.lunrData = {
                   "Router.html#loadView": {
                     "ref": "Router.html#loadView",
                     "tf": 5.555555555555555
+                  }
+                }
+              }
+            },
+            "v": {
+              "docs": {},
+              "e": {
+                "docs": {
+                  "Router.html#navigate": {
+                    "ref": "Router.html#navigate",
+                    "tf": 8.333333333333332
                   }
                 }
               }
@@ -1341,17 +1341,17 @@ window.lunrData = {
                     "docs": {},
                     "p": {
                       "docs": {
-                        "Router.html#execute": {
-                          "ref": "Router.html#execute",
-                          "tf": 3.8461538461538463
+                        "Router.html#loadView": {
+                          "ref": "Router.html#loadView",
+                          "tf": 5.555555555555555
                         },
                         "Router.html#cleanup": {
                           "ref": "Router.html#cleanup",
                           "tf": 708.3333333333334
                         },
-                        "Router.html#loadView": {
-                          "ref": "Router.html#loadView",
-                          "tf": 5.555555555555555
+                        "Router.html#execute": {
+                          "ref": "Router.html#execute",
+                          "tf": 3.8461538461538463
                         }
                       }
                     }
@@ -1432,13 +1432,13 @@ window.lunrData = {
               "docs": {},
               "l": {
                 "docs": {
-                  "Router.html#cleanup": {
-                    "ref": "Router.html#cleanup",
-                    "tf": 8.333333333333332
-                  },
                   "Router.html#loadView": {
                     "ref": "Router.html#loadView",
                     "tf": 5.555555555555555
+                  },
+                  "Router.html#cleanup": {
+                    "ref": "Router.html#cleanup",
+                    "tf": 8.333333333333332
                   }
                 },
                 "b": {
@@ -1449,12 +1449,12 @@ window.lunrData = {
                       "docs": {},
                       "k": {
                         "docs": {
-                          "Router.html#execute": {
-                            "ref": "Router.html#execute",
-                            "tf": 33.33333333333333
-                          },
                           "Router.html#route": {
                             "ref": "Router.html#route",
+                            "tf": 33.33333333333333
+                          },
+                          "Router.html#execute": {
+                            "ref": "Router.html#execute",
                             "tf": 33.33333333333333
                           }
                         }
@@ -1505,61 +1505,10 @@ window.lunrData = {
               }
             }
           },
-          "a": {
-            "docs": {},
-            "s": {
-              "docs": {},
-              "t": {
-                "docs": {
-                  "Router.html#cleanup": {
-                    "ref": "Router.html#cleanup",
-                    "tf": 8.333333333333332
-                  },
-                  "Router.html#loadView": {
-                    "ref": "Router.html#loadView",
-                    "tf": 5.555555555555555
-                  }
-                }
-              }
-            }
-          },
           "t": {
             "docs": {},
             ";": {
               "docs": {},
-              "a": {
-                "docs": {},
-                "s": {
-                  "docs": {},
-                  "y": {
-                    "docs": {},
-                    "n": {
-                      "docs": {},
-                      "c": {
-                        "docs": {},
-                        "&": {
-                          "docs": {},
-                          "g": {
-                            "docs": {},
-                            "t": {
-                              "docs": {
-                                "Router.html#cleanup": {
-                                  "ref": "Router.html#cleanup",
-                                  "tf": 50
-                                },
-                                "Router.html#loadView": {
-                                  "ref": "Router.html#loadView",
-                                  "tf": 33.33333333333333
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              },
               "s": {
                 "docs": {},
                 "t": {
@@ -1589,6 +1538,57 @@ window.lunrData = {
                         }
                       }
                     }
+                  }
+                }
+              },
+              "a": {
+                "docs": {},
+                "s": {
+                  "docs": {},
+                  "y": {
+                    "docs": {},
+                    "n": {
+                      "docs": {},
+                      "c": {
+                        "docs": {},
+                        "&": {
+                          "docs": {},
+                          "g": {
+                            "docs": {},
+                            "t": {
+                              "docs": {
+                                "Router.html#loadView": {
+                                  "ref": "Router.html#loadView",
+                                  "tf": 33.33333333333333
+                                },
+                                "Router.html#cleanup": {
+                                  "ref": "Router.html#cleanup",
+                                  "tf": 50
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "a": {
+            "docs": {},
+            "s": {
+              "docs": {},
+              "t": {
+                "docs": {
+                  "Router.html#loadView": {
+                    "ref": "Router.html#loadView",
+                    "tf": 5.555555555555555
+                  },
+                  "Router.html#cleanup": {
+                    "ref": "Router.html#cleanup",
+                    "tf": 8.333333333333332
                   }
                 }
               }
@@ -1789,6 +1789,23 @@ window.lunrData = {
               }
             }
           },
+          "m": {
+            "docs": {},
+            "p": {
+              "docs": {},
+              "t": {
+                "docs": {},
+                "i": {
+                  "docs": {
+                    "Router.html#initialize": {
+                      "ref": "Router.html#initialize",
+                      "tf": 7.142857142857142
+                    }
+                  }
+                }
+              }
+            }
+          },
           "x": {
             "docs": {},
             "e": {
@@ -1803,23 +1820,6 @@ window.lunrData = {
                         "ref": "Router.html#execute",
                         "tf": 687.1794871794872
                       }
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "m": {
-            "docs": {},
-            "p": {
-              "docs": {},
-              "t": {
-                "docs": {},
-                "i": {
-                  "docs": {
-                    "Router.html#initialize": {
-                      "ref": "Router.html#initialize",
-                      "tf": 7.142857142857142
                     }
                   }
                 }
@@ -1915,37 +1915,37 @@ window.lunrData = {
                       "docs": {},
                       "n": {
                         "docs": {
-                          "Router.html#navigate": {
-                            "ref": "Router.html#navigate",
-                            "tf": 110
-                          },
-                          "Router.html#execute": {
-                            "ref": "Router.html#execute",
-                            "tf": 110
-                          },
-                          "Router.html#route": {
-                            "ref": "Router.html#route",
-                            "tf": 110
-                          },
-                          "Router.html#startHistory": {
-                            "ref": "Router.html#startHistory",
-                            "tf": 110
-                          },
-                          "Router.html#cleanup": {
-                            "ref": "Router.html#cleanup",
+                          "Router.html#.parseQuery": {
+                            "ref": "Router.html#.parseQuery",
                             "tf": 110
                           },
                           "Router.html#loadView": {
                             "ref": "Router.html#loadView",
                             "tf": 110
                           },
-                          "Router.html#.parseQuery": {
-                            "ref": "Router.html#.parseQuery",
+                          "Router.html#cleanup": {
+                            "ref": "Router.html#cleanup",
                             "tf": 110
                           },
                           "Router.html#initialize": {
                             "ref": "Router.html#initialize",
                             "tf": 117.14285714285714
+                          },
+                          "Router.html#route": {
+                            "ref": "Router.html#route",
+                            "tf": 110
+                          },
+                          "Router.html#execute": {
+                            "ref": "Router.html#execute",
+                            "tf": 110
+                          },
+                          "Router.html#navigate": {
+                            "ref": "Router.html#navigate",
+                            "tf": 110
+                          },
+                          "Router.html#startHistory": {
+                            "ref": "Router.html#startHistory",
+                            "tf": 110
                           }
                         }
                       }
@@ -2165,30 +2165,6 @@ window.lunrData = {
               }
             }
           },
-          "p": {
-            "docs": {},
-            "t": {
-              "docs": {},
-              "i": {
-                "docs": {},
-                "o": {
-                  "docs": {},
-                  "n": {
-                    "docs": {
-                      "Router.html#navigate": {
-                        "ref": "Router.html#navigate",
-                        "tf": 33.33333333333333
-                      },
-                      "Router.html#startHistory": {
-                        "ref": "Router.html#startHistory",
-                        "tf": 50
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
           "b": {
             "docs": {},
             "j": {
@@ -2251,6 +2227,30 @@ window.lunrData = {
                             "tf": 7.142857142857142
                           }
                         }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "p": {
+            "docs": {},
+            "t": {
+              "docs": {},
+              "i": {
+                "docs": {},
+                "o": {
+                  "docs": {},
+                  "n": {
+                    "docs": {
+                      "Router.html#navigate": {
+                        "ref": "Router.html#navigate",
+                        "tf": 33.33333333333333
+                      },
+                      "Router.html#startHistory": {
+                        "ref": "Router.html#startHistory",
+                        "tf": 50
                       }
                     }
                   }
@@ -2357,13 +2357,13 @@ window.lunrData = {
                     "ref": "Router.html#view",
                     "tf": 750
                   },
-                  "Router.html#cleanup": {
-                    "ref": "Router.html#cleanup",
-                    "tf": 8.333333333333332
-                  },
                   "Router.html#loadView": {
                     "ref": "Router.html#loadView",
                     "tf": 44.44444444444444
+                  },
+                  "Router.html#cleanup": {
+                    "ref": "Router.html#cleanup",
+                    "tf": 8.333333333333332
                   }
                 }
               }
@@ -2592,55 +2592,15 @@ window.lunrData = {
       "summary": "",
       "description": ""
     },
-    "Router.html#navigate": {
-      "id": "Router.html#navigate",
+    "Router.html#.parseQuery": {
+      "id": "Router.html#.parseQuery",
       "kind": "function",
-      "title": "navigate( fragment, options )",
-      "longname": "Router#navigate",
-      "name": "navigate",
-      "tags": "Router#navigate navigate",
+      "title": "&lt;static&gt; parseQuery( queryString )",
+      "longname": "Router.parseQuery",
+      "name": "parseQuery",
+      "tags": "Router.parseQuery parseQuery",
       "summary": "",
-      "description": "Simple proxy to history to save a fragment into the history."
-    },
-    "Router.html#execute": {
-      "id": "Router.html#execute",
-      "kind": "function",
-      "title": "execute( callback, args )",
-      "longname": "Router#execute",
-      "name": "execute",
-      "tags": "Router#execute execute",
-      "summary": "",
-      "description": "Execute a route handler with the provided parameters. This is anexcellent place to do pre-route setup or post-route cleanup."
-    },
-    "Router.html#route": {
-      "id": "Router.html#route",
-      "kind": "function",
-      "title": "route( route, name, callback )",
-      "longname": "Router#route",
-      "name": "route",
-      "tags": "Router#route route",
-      "summary": "",
-      "description": "Manually bind a single named route to a callback."
-    },
-    "Router.html#startHistory": {
-      "id": "Router.html#startHistory",
-      "kind": "function",
-      "title": "startHistory( options )",
-      "longname": "Router#startHistory",
-      "name": "startHistory",
-      "tags": "Router#startHistory startHistory",
-      "summary": "",
-      "description": "Start the history using browser History API"
-    },
-    "Router.html#cleanup": {
-      "id": "Router.html#cleanup",
-      "kind": "function",
-      "title": "&lt;async&gt; cleanup()",
-      "longname": "Router#cleanup",
-      "name": "cleanup",
-      "tags": "Router#cleanup cleanup",
-      "summary": "",
-      "description": "Remove the last view by calling cleanup, then removes"
+      "description": "Parse a query string and return as an object"
     },
     "Router.html#loadView": {
       "id": "Router.html#loadView",
@@ -2652,15 +2612,15 @@ window.lunrData = {
       "summary": "",
       "description": "Load a view safely and remove the last view by calling cleanup, then remove"
     },
-    "Router.html#.parseQuery": {
-      "id": "Router.html#.parseQuery",
+    "Router.html#cleanup": {
+      "id": "Router.html#cleanup",
       "kind": "function",
-      "title": "&lt;static&gt; parseQuery( queryString )",
-      "longname": "Router.parseQuery",
-      "name": "parseQuery",
-      "tags": "Router.parseQuery parseQuery",
+      "title": "&lt;async&gt; cleanup()",
+      "longname": "Router#cleanup",
+      "name": "cleanup",
+      "tags": "Router#cleanup cleanup",
       "summary": "",
-      "description": "Parse a query string and return as an object"
+      "description": "Remove the last view by calling cleanup, then removes"
     },
     "Router.html#initialize": {
       "id": "Router.html#initialize",
@@ -2671,6 +2631,46 @@ window.lunrData = {
       "tags": "Router#initialize initialize",
       "summary": "",
       "description": "Initialize is an empty function by default. Override it with your owninitialization logic."
+    },
+    "Router.html#route": {
+      "id": "Router.html#route",
+      "kind": "function",
+      "title": "route( route, name, callback )",
+      "longname": "Router#route",
+      "name": "route",
+      "tags": "Router#route route",
+      "summary": "",
+      "description": "Manually bind a single named route to a callback."
+    },
+    "Router.html#execute": {
+      "id": "Router.html#execute",
+      "kind": "function",
+      "title": "execute( callback, args )",
+      "longname": "Router#execute",
+      "name": "execute",
+      "tags": "Router#execute execute",
+      "summary": "",
+      "description": "Execute a route handler with the provided parameters. This is anexcellent place to do pre-route setup or post-route cleanup."
+    },
+    "Router.html#navigate": {
+      "id": "Router.html#navigate",
+      "kind": "function",
+      "title": "navigate( fragment, options )",
+      "longname": "Router#navigate",
+      "name": "navigate",
+      "tags": "Router#navigate navigate",
+      "summary": "",
+      "description": "Simple proxy to history to save a fragment into the history."
+    },
+    "Router.html#startHistory": {
+      "id": "Router.html#startHistory",
+      "kind": "function",
+      "title": "startHistory( options )",
+      "longname": "Router#startHistory",
+      "name": "startHistory",
+      "tags": "Router#startHistory startHistory",
+      "summary": "",
+      "description": "Start the history using browser History API"
     }
   }
 };
