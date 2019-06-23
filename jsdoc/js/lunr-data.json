@@ -65,16 +65,18 @@
           "browser",
           "class",
           "cross",
-          "eitherpushst",
+          "fall",
           "fragment",
           "handl",
           "histori",
           "ie",
+          "inspir",
           "manag",
-          "natch),fal",
+          "natch",
           "old",
-          "oronhashchangeand",
-          "polling.inspir",
+          "onhashchang",
+          "poll",
+          "pushstat",
           "real",
           "support",
           "thank",
@@ -82,7 +84,6 @@
         ],
         "Router.html": [
           "action",
-          "arematch",
           "class",
           "constructor",
           "creat",
@@ -92,13 +93,15 @@
           "flag",
           "hash",
           "map",
+          "match",
           "new",
           "on",
           "pass",
           "rout",
           "router",
           "set",
-          "statically.support",
+          "static",
+          "support",
           "transit",
           "url",
           "well"
@@ -150,7 +153,6 @@
           "initi",
           "logic",
           "overrid",
-          "owniniti",
           "router#initi"
         ],
         "Router.html#route": [
@@ -164,10 +166,10 @@
           "singl"
         ],
         "Router.html#execute": [
-          "anexcel",
           "arg",
           "callback",
           "cleanup",
+          "excel",
           "execut",
           "function",
           "handler",
@@ -257,7 +259,7 @@
                     "docs": {
                       "Router.html": {
                         "ref": "Router.html",
-                        "tf": 2.1739130434782608
+                        "tf": 2.083333333333333
                       }
                     }
                   }
@@ -267,57 +269,11 @@
           },
           "r": {
             "docs": {},
-            "e": {
-              "docs": {},
-              "m": {
-                "docs": {},
-                "a": {
-                  "docs": {},
-                  "t": {
-                    "docs": {},
-                    "c": {
-                      "docs": {},
-                      "h": {
-                        "docs": {
-                          "Router.html": {
-                            "ref": "Router.html",
-                            "tf": 2.1739130434782608
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            },
             "g": {
               "docs": {
                 "Router.html#execute": {
                   "ref": "Router.html#execute",
                   "tf": 33.33333333333333
-                }
-              }
-            }
-          },
-          "n": {
-            "docs": {},
-            "e": {
-              "docs": {},
-              "x": {
-                "docs": {},
-                "c": {
-                  "docs": {},
-                  "e": {
-                    "docs": {},
-                    "l": {
-                      "docs": {
-                        "Router.html#execute": {
-                          "ref": "Router.html#execute",
-                          "tf": 3.8461538461538463
-                        }
-                      }
-                    }
-                  }
                 }
               }
             }
@@ -428,6 +384,23 @@
                 }
               }
             },
+            "s": {
+              "docs": {},
+              "p": {
+                "docs": {},
+                "i": {
+                  "docs": {},
+                  "r": {
+                    "docs": {
+                      "History.html": {
+                        "ref": "History.html",
+                        "tf": 2.1739130434782608
+                      }
+                    }
+                  }
+                }
+              }
+            },
             "i": {
               "docs": {},
               "t": {
@@ -436,7 +409,7 @@
                   "docs": {
                     "Router.html#initialize": {
                       "ref": "Router.html#initialize",
-                      "tf": 757.1428571428571
+                      "tf": 764.2857142857143
                     }
                   }
                 }
@@ -447,7 +420,7 @@
             "docs": {
               "History.html": {
                 "ref": "History.html",
-                "tf": 2.380952380952381
+                "tf": 2.1739130434782608
               }
             }
           }
@@ -471,7 +444,7 @@
               "docs": {
                 "Router.html": {
                   "ref": "Router.html",
-                  "tf": 2.1739130434782608
+                  "tf": 2.083333333333333
                 }
               }
             }
@@ -483,25 +456,10 @@
               "c": {
                 "docs": {},
                 "h": {
-                  "docs": {},
-                  ")": {
-                    "docs": {},
-                    ",": {
-                      "docs": {},
-                      "f": {
-                        "docs": {},
-                        "a": {
-                          "docs": {},
-                          "l": {
-                            "docs": {
-                              "History.html": {
-                                "ref": "History.html",
-                                "tf": 2.380952380952381
-                              }
-                            }
-                          }
-                        }
-                      }
+                  "docs": {
+                    "History.html": {
+                      "ref": "History.html",
+                      "tf": 2.1739130434782608
                     }
                   }
                 }
@@ -597,40 +555,10 @@
             "l": {
               "docs": {},
               "l": {
-                "docs": {},
-                "i": {
-                  "docs": {},
-                  "n": {
-                    "docs": {},
-                    "g": {
-                      "docs": {},
-                      ".": {
-                        "docs": {},
-                        "i": {
-                          "docs": {},
-                          "n": {
-                            "docs": {},
-                            "s": {
-                              "docs": {},
-                              "p": {
-                                "docs": {},
-                                "i": {
-                                  "docs": {},
-                                  "r": {
-                                    "docs": {
-                                      "History.html": {
-                                        "ref": "History.html",
-                                        "tf": 2.380952380952381
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
+                "docs": {
+                  "History.html": {
+                    "ref": "History.html",
+                    "tf": 2.1739130434782608
                   }
                 }
               }
@@ -647,6 +575,32 @@
               }
             }
           },
+          "u": {
+            "docs": {},
+            "s": {
+              "docs": {},
+              "h": {
+                "docs": {},
+                "s": {
+                  "docs": {},
+                  "t": {
+                    "docs": {},
+                    "a": {
+                      "docs": {},
+                      "t": {
+                        "docs": {
+                          "History.html": {
+                            "ref": "History.html",
+                            "tf": 2.1739130434782608
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
           "a": {
             "docs": {},
             "s": {
@@ -655,7 +609,7 @@
                 "docs": {
                   "Router.html": {
                     "ref": "Router.html",
-                    "tf": 2.1739130434782608
+                    "tf": 2.083333333333333
                   }
                 }
               }
@@ -751,7 +705,7 @@
                 "docs": {
                   "History.html": {
                     "ref": "History.html",
-                    "tf": 2.380952380952381
+                    "tf": 2.1739130434782608
                   }
                 }
               }
@@ -800,7 +754,7 @@
                 "docs": {
                   "Router.html": {
                     "ref": "Router.html",
-                    "tf": 6.521739130434782
+                    "tf": 6.25
                   },
                   "Router.html#route": {
                     "ref": "Router.html#route",
@@ -817,7 +771,7 @@
                     "docs": {
                       "Router.html": {
                         "ref": "Router.html",
-                        "tf": 1902.1739130434783
+                        "tf": 1902.0833333333333
                       }
                     },
                     "#": {
@@ -1115,7 +1069,11 @@
                       "docs": {
                         "History.html": {
                           "ref": "History.html",
-                          "tf": 2.380952380952381
+                          "tf": 2.1739130434782608
+                        },
+                        "Router.html": {
+                          "ref": "Router.html",
+                          "tf": 2.083333333333333
                         }
                       }
                     }
@@ -1130,7 +1088,7 @@
               "docs": {
                 "Router.html": {
                   "ref": "Router.html",
-                  "tf": 4.3478260869565215
+                  "tf": 4.166666666666666
                 }
               },
               "u": {
@@ -1155,46 +1113,10 @@
                 "i": {
                   "docs": {},
                   "c": {
-                    "docs": {},
-                    "a": {
-                      "docs": {},
-                      "l": {
-                        "docs": {},
-                        "l": {
-                          "docs": {},
-                          "y": {
-                            "docs": {},
-                            ".": {
-                              "docs": {},
-                              "s": {
-                                "docs": {},
-                                "u": {
-                                  "docs": {},
-                                  "p": {
-                                    "docs": {},
-                                    "p": {
-                                      "docs": {},
-                                      "o": {
-                                        "docs": {},
-                                        "r": {
-                                          "docs": {},
-                                          "t": {
-                                            "docs": {
-                                              "Router.html": {
-                                                "ref": "Router.html",
-                                                "tf": 2.1739130434782608
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
+                    "docs": {
+                      "Router.html": {
+                        "ref": "Router.html",
+                        "tf": 2.083333333333333
                       }
                     }
                   }
@@ -1370,7 +1292,7 @@
                   "docs": {
                     "History.html": {
                       "ref": "History.html",
-                      "tf": 2.380952380952381
+                      "tf": 2.1739130434782608
                     }
                   }
                 }
@@ -1384,7 +1306,7 @@
                   "docs": {
                     "Router.html": {
                       "ref": "Router.html",
-                      "tf": 2.1739130434782608
+                      "tf": 2.083333333333333
                     }
                   }
                 }
@@ -1413,7 +1335,7 @@
                               "docs": {
                                 "Router.html": {
                                   "ref": "Router.html",
-                                  "tf": 2.1739130434782608
+                                  "tf": 2.083333333333333
                                 }
                               }
                             }
@@ -1650,7 +1572,7 @@
                 "docs": {
                   "History.html": {
                     "ref": "History.html",
-                    "tf": 2.380952380952381
+                    "tf": 2.1739130434782608
                   }
                 },
                 "b": {
@@ -1667,7 +1589,7 @@
                             "docs": {
                               "History.html": {
                                 "ref": "History.html",
-                                "tf": 2.380952380952381
+                                "tf": 2.1739130434782608
                               }
                             }
                           }
@@ -1684,7 +1606,7 @@
                 "docs": {
                   "History.html": {
                     "ref": "History.html",
-                    "tf": 2.380952380952381
+                    "tf": 2.1739130434782608
                   }
                 }
               }
@@ -1704,7 +1626,7 @@
                       "docs": {
                         "History.html": {
                           "ref": "History.html",
-                          "tf": 4.761904761904762
+                          "tf": 4.3478260869565215
                         },
                         "Router.html#startHistory": {
                           "ref": "Router.html#startHistory",
@@ -1732,103 +1654,33 @@
             }
           }
         },
-        "e": {
-          "docs": {},
-          "i": {
-            "docs": {},
-            "t": {
-              "docs": {},
-              "h": {
-                "docs": {},
-                "e": {
-                  "docs": {},
-                  "r": {
-                    "docs": {},
-                    "p": {
-                      "docs": {},
-                      "u": {
-                        "docs": {},
-                        "s": {
-                          "docs": {},
-                          "h": {
-                            "docs": {},
-                            "s": {
-                              "docs": {},
-                              "t": {
-                                "docs": {
-                                  "History.html": {
-                                    "ref": "History.html",
-                                    "tf": 2.380952380952381
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "v": {
-            "docs": {},
-            "e": {
-              "docs": {},
-              "n": {
-                "docs": {},
-                "t": {
-                  "docs": {
-                    "Router.html": {
-                      "ref": "Router.html",
-                      "tf": 2.1739130434782608
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "m": {
-            "docs": {},
-            "p": {
-              "docs": {},
-              "t": {
-                "docs": {},
-                "i": {
-                  "docs": {
-                    "Router.html#initialize": {
-                      "ref": "Router.html#initialize",
-                      "tf": 7.142857142857142
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "x": {
-            "docs": {},
-            "e": {
-              "docs": {},
-              "c": {
-                "docs": {},
-                "u": {
-                  "docs": {},
-                  "t": {
-                    "docs": {
-                      "Router.html#execute": {
-                        "ref": "Router.html#execute",
-                        "tf": 687.1794871794872
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
         "f": {
           "docs": {},
+          "a": {
+            "docs": {},
+            "l": {
+              "docs": {},
+              "l": {
+                "docs": {
+                  "History.html": {
+                    "ref": "History.html",
+                    "tf": 2.1739130434782608
+                  }
+                }
+              }
+            },
+            "u": {
+              "docs": {},
+              "x": {
+                "docs": {
+                  "Router.html": {
+                    "ref": "Router.html",
+                    "tf": 2.083333333333333
+                  }
+                }
+              }
+            }
+          },
           "r": {
             "docs": {},
             "a": {
@@ -1845,7 +1697,7 @@
                         "docs": {
                           "History.html": {
                             "ref": "History.html",
-                            "tf": 2.380952380952381
+                            "tf": 2.1739130434782608
                           },
                           "Router.html#navigate": {
                             "ref": "Router.html#navigate",
@@ -1859,20 +1711,6 @@
               }
             }
           },
-          "a": {
-            "docs": {},
-            "u": {
-              "docs": {},
-              "x": {
-                "docs": {
-                  "Router.html": {
-                    "ref": "Router.html",
-                    "tf": 2.1739130434782608
-                  }
-                }
-              }
-            }
-          },
           "i": {
             "docs": {},
             "r": {
@@ -1881,7 +1719,7 @@
                 "docs": {
                   "Router.html": {
                     "ref": "Router.html",
-                    "tf": 2.1739130434782608
+                    "tf": 2.083333333333333
                   }
                 }
               }
@@ -1895,7 +1733,7 @@
                 "docs": {
                   "Router.html": {
                     "ref": "Router.html",
-                    "tf": 2.1739130434782608
+                    "tf": 2.083333333333333
                   }
                 }
               }
@@ -1968,7 +1806,7 @@
                   "docs": {
                     "History.html": {
                       "ref": "History.html",
-                      "tf": 2.380952380952381
+                      "tf": 2.1739130434782608
                     }
                   },
                   "e": {
@@ -1991,7 +1829,7 @@
                 "docs": {
                   "Router.html": {
                     "ref": "Router.html",
-                    "tf": 2.1739130434782608
+                    "tf": 2.083333333333333
                   }
                 }
               }
@@ -2011,7 +1849,7 @@
                       "docs": {
                         "History.html": {
                           "ref": "History.html",
-                          "tf": 1902.3809523809523
+                          "tf": 1902.1739130434783
                         },
                         "Router.html#navigate": {
                           "ref": "Router.html#navigate",
@@ -2041,7 +1879,7 @@
                   "docs": {
                     "History.html": {
                       "ref": "History.html",
-                      "tf": 2.380952380952381
+                      "tf": 2.1739130434782608
                     }
                   }
                 }
@@ -2065,7 +1903,21 @@
               "docs": {
                 "Router.html": {
                   "ref": "Router.html",
-                  "tf": 2.1739130434782608
+                  "tf": 2.083333333333333
+                }
+              }
+            },
+            "t": {
+              "docs": {},
+              "c": {
+                "docs": {},
+                "h": {
+                  "docs": {
+                    "Router.html": {
+                      "ref": "Router.html",
+                      "tf": 2.083333333333333
+                    }
+                  }
                 }
               }
             }
@@ -2099,52 +1951,39 @@
               "docs": {
                 "History.html": {
                   "ref": "History.html",
-                  "tf": 2.380952380952381
+                  "tf": 2.1739130434782608
                 }
               }
             }
           },
-          "r": {
-            "docs": {},
-            "o": {
+          "n": {
+            "docs": {
+              "Router.html": {
+                "ref": "Router.html",
+                "tf": 2.083333333333333
+              }
+            },
+            "h": {
               "docs": {},
-              "n": {
+              "a": {
                 "docs": {},
-                "h": {
+                "s": {
                   "docs": {},
-                  "a": {
+                  "h": {
                     "docs": {},
-                    "s": {
+                    "c": {
                       "docs": {},
                       "h": {
                         "docs": {},
-                        "c": {
+                        "a": {
                           "docs": {},
-                          "h": {
+                          "n": {
                             "docs": {},
-                            "a": {
-                              "docs": {},
-                              "n": {
-                                "docs": {},
-                                "g": {
-                                  "docs": {},
-                                  "e": {
-                                    "docs": {},
-                                    "a": {
-                                      "docs": {},
-                                      "n": {
-                                        "docs": {},
-                                        "d": {
-                                          "docs": {
-                                            "History.html": {
-                                              "ref": "History.html",
-                                              "tf": 2.380952380952381
-                                            }
-                                          }
-                                        }
-                                      }
-                                    }
-                                  }
+                            "g": {
+                              "docs": {
+                                "History.html": {
+                                  "ref": "History.html",
+                                  "tf": 2.1739130434782608
                                 }
                               }
                             }
@@ -2154,14 +1993,6 @@
                     }
                   }
                 }
-              }
-            }
-          },
-          "n": {
-            "docs": {
-              "Router.html": {
-                "ref": "Router.html",
-                "tf": 2.1739130434782608
               }
             }
           },
@@ -2208,32 +2039,6 @@
               }
             }
           },
-          "w": {
-            "docs": {},
-            "n": {
-              "docs": {},
-              "i": {
-                "docs": {},
-                "n": {
-                  "docs": {},
-                  "i": {
-                    "docs": {},
-                    "t": {
-                      "docs": {},
-                      "i": {
-                        "docs": {
-                          "Router.html#initialize": {
-                            "ref": "Router.html#initialize",
-                            "tf": 7.142857142857142
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
           "p": {
             "docs": {},
             "t": {
@@ -2271,7 +2076,7 @@
                   "docs": {
                     "History.html": {
                       "ref": "History.html",
-                      "tf": 2.380952380952381
+                      "tf": 2.1739130434782608
                     }
                   }
                 }
@@ -2292,7 +2097,7 @@
                       "docs": {
                         "Router.html": {
                           "ref": "Router.html",
-                          "tf": 2.1739130434782608
+                          "tf": 2.083333333333333
                         }
                       }
                     }
@@ -2310,11 +2115,11 @@
               "docs": {
                 "History.html": {
                   "ref": "History.html",
-                  "tf": 4.761904761904762
+                  "tf": 4.3478260869565215
                 },
                 "Router.html": {
                   "ref": "Router.html",
-                  "tf": 2.1739130434782608
+                  "tf": 2.083333333333333
                 }
               }
             }
@@ -2324,6 +2129,77 @@
               "Router.html#startHistory": {
                 "ref": "Router.html#startHistory",
                 "tf": 8.333333333333332
+              }
+            }
+          }
+        },
+        "e": {
+          "docs": {},
+          "v": {
+            "docs": {},
+            "e": {
+              "docs": {},
+              "n": {
+                "docs": {},
+                "t": {
+                  "docs": {
+                    "Router.html": {
+                      "ref": "Router.html",
+                      "tf": 2.083333333333333
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "m": {
+            "docs": {},
+            "p": {
+              "docs": {},
+              "t": {
+                "docs": {},
+                "i": {
+                  "docs": {
+                    "Router.html#initialize": {
+                      "ref": "Router.html#initialize",
+                      "tf": 7.142857142857142
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "x": {
+            "docs": {},
+            "c": {
+              "docs": {},
+              "e": {
+                "docs": {},
+                "l": {
+                  "docs": {
+                    "Router.html#execute": {
+                      "ref": "Router.html#execute",
+                      "tf": 3.8461538461538463
+                    }
+                  }
+                }
+              }
+            },
+            "e": {
+              "docs": {},
+              "c": {
+                "docs": {},
+                "u": {
+                  "docs": {},
+                  "t": {
+                    "docs": {
+                      "Router.html#execute": {
+                        "ref": "Router.html#execute",
+                        "tf": 687.1794871794872
+                      }
+                    }
+                  }
+                }
               }
             }
           }
@@ -2338,7 +2214,7 @@
                 "docs": {
                   "Router.html": {
                     "ref": "Router.html",
-                    "tf": 2.1739130434782608
+                    "tf": 2.083333333333333
                   }
                 }
               }
@@ -2408,13 +2284,11 @@
           }
         }
       },
-      "length": 135
+      "length": 137
     },
     "corpusTokens": [
       "action",
-      "anexcel",
       "api",
-      "arematch",
       "arg",
       "augmented.j",
       "back",
@@ -2432,10 +2306,11 @@
       "default",
       "develop",
       "document",
-      "eitherpushst",
       "empti",
       "event",
+      "excel",
       "execut",
+      "fall",
       "faux",
       "fire",
       "flag",
@@ -2449,6 +2324,7 @@
       "ie",
       "index",
       "initi",
+      "inspir",
       "last",
       "list",
       "list:class",
@@ -2460,30 +2336,31 @@
       "manag",
       "manual",
       "map",
+      "match",
       "member",
       "name",
-      "natch),fal",
+      "natch",
       "navig",
       "new",
       "next",
       "object",
       "old",
       "on",
+      "onhashchang",
       "option",
-      "oronhashchangeand",
       "overrid",
-      "owniniti",
       "paramet",
       "pars",
       "parsequeri",
       "pass",
       "place",
-      "polling.inspir",
+      "poll",
       "post",
       "pre",
       "present",
       "provid",
       "proxi",
+      "pushstat",
       "queri",
       "querystr",
       "readm",
@@ -2510,7 +2387,7 @@
       "singl",
       "start",
       "starthistori",
-      "statically.support",
+      "static",
       "string",
       "support",
       "thank",
@@ -2568,7 +2445,7 @@
       "name": "History",
       "tags": "History",
       "summary": "",
-      "description": "Handles cross-browser history management, based on eitherpushState and real URLs, oronhashchangeand URL fragments. If the browser supports neither (old IE, natch),falls back to polling.Inspired By Backbone.js - Thank you! 😍",
+      "description": "Handles cross-browser history management, based on either pushState and real URLs, or onhashchange and URL fragments. If the browser supports neither (old IE, natch), falls back to polling. Inspired By Backbone.js - Thank you! 😍",
       "body": ""
     },
     "Router.html": {
@@ -2579,7 +2456,7 @@
       "name": "Router",
       "tags": "Router",
       "summary": "",
-      "description": "Routers map faux-URLs to actions, and fire events when routes arematched. Creating a new one sets its routes hash, if not set statically.Supports passing routes to the constructor as well as a transition flag.",
+      "description": "Routers map faux-URLs to actions, and fire events when routes are matched. Creating a new one sets its routes hash, if not set statically. Supports passing routes to the constructor as well as a transition flag.",
       "body": ""
     },
     "Router.html#view": {
@@ -2630,7 +2507,7 @@
       "name": "initialize",
       "tags": "Router#initialize initialize",
       "summary": "",
-      "description": "Initialize is an empty function by default. Override it with your owninitialization logic."
+      "description": "Initialize is an empty function by default. Override it with your own initialization logic."
     },
     "Router.html#route": {
       "id": "Router.html#route",
@@ -2650,7 +2527,7 @@
       "name": "execute",
       "tags": "Router#execute execute",
       "summary": "",
-      "description": "Execute a route handler with the provided parameters. This is anexcellent place to do pre-route setup or post-route cleanup."
+      "description": "Execute a route handler with the provided parameters. This is an excellent place to do pre-route setup or post-route cleanup."
     },
     "Router.html#navigate": {
       "id": "Router.html#navigate",
