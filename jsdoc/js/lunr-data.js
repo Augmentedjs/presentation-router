@@ -59,27 +59,17 @@ window.lunrData = {
           "list:class"
         ],
         "History.html": [
-          "back",
-          "backbone.j",
           "base",
           "browser",
           "class",
           "cross",
-          "fall",
           "fragment",
           "handl",
           "histori",
-          "ie",
-          "inspir",
           "manag",
-          "natch",
-          "old",
           "onhashchang",
-          "poll",
           "pushstat",
           "real",
-          "support",
-          "thank",
           "url"
         ],
         "Router.html": [
@@ -384,23 +374,6 @@ window.lunrData = {
                 }
               }
             },
-            "s": {
-              "docs": {},
-              "p": {
-                "docs": {},
-                "i": {
-                  "docs": {},
-                  "r": {
-                    "docs": {
-                      "History.html": {
-                        "ref": "History.html",
-                        "tf": 2.1739130434782608
-                      }
-                    }
-                  }
-                }
-              }
-            },
             "i": {
               "docs": {},
               "t": {
@@ -413,14 +386,6 @@ window.lunrData = {
                     }
                   }
                 }
-              }
-            }
-          },
-          "e": {
-            "docs": {
-              "History.html": {
-                "ref": "History.html",
-                "tf": 2.1739130434782608
               }
             }
           }
@@ -451,20 +416,6 @@ window.lunrData = {
           },
           "a": {
             "docs": {},
-            "t": {
-              "docs": {},
-              "c": {
-                "docs": {},
-                "h": {
-                  "docs": {
-                    "History.html": {
-                      "ref": "History.html",
-                      "tf": 2.1739130434782608
-                    }
-                  }
-                }
-              }
-            },
             "m": {
               "docs": {},
               "e": {
@@ -550,31 +501,6 @@ window.lunrData = {
               }
             }
           },
-          "o": {
-            "docs": {},
-            "l": {
-              "docs": {},
-              "l": {
-                "docs": {
-                  "History.html": {
-                    "ref": "History.html",
-                    "tf": 2.1739130434782608
-                  }
-                }
-              }
-            },
-            "s": {
-              "docs": {},
-              "t": {
-                "docs": {
-                  "Router.html#execute": {
-                    "ref": "Router.html#execute",
-                    "tf": 3.8461538461538463
-                  }
-                }
-              }
-            }
-          },
           "u": {
             "docs": {},
             "s": {
@@ -591,7 +517,7 @@ window.lunrData = {
                         "docs": {
                           "History.html": {
                             "ref": "History.html",
-                            "tf": 2.1739130434782608
+                            "tf": 4.166666666666666
                           }
                         }
                       }
@@ -682,6 +608,20 @@ window.lunrData = {
                 }
               }
             }
+          },
+          "o": {
+            "docs": {},
+            "s": {
+              "docs": {},
+              "t": {
+                "docs": {
+                  "Router.html#execute": {
+                    "ref": "Router.html#execute",
+                    "tf": 3.8461538461538463
+                  }
+                }
+              }
+            }
           }
         },
         "r": {
@@ -705,7 +645,7 @@ window.lunrData = {
                 "docs": {
                   "History.html": {
                     "ref": "History.html",
-                    "tf": 2.1739130434782608
+                    "tf": 4.166666666666666
                   }
                 }
               }
@@ -1055,33 +995,6 @@ window.lunrData = {
               }
             }
           },
-          "u": {
-            "docs": {},
-            "p": {
-              "docs": {},
-              "p": {
-                "docs": {},
-                "o": {
-                  "docs": {},
-                  "r": {
-                    "docs": {},
-                    "t": {
-                      "docs": {
-                        "History.html": {
-                          "ref": "History.html",
-                          "tf": 2.1739130434782608
-                        },
-                        "Router.html": {
-                          "ref": "Router.html",
-                          "tf": 2.083333333333333
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
           "e": {
             "docs": {},
             "t": {
@@ -1171,6 +1084,29 @@ window.lunrData = {
                       "Router.html#.parseQuery": {
                         "ref": "Router.html#.parseQuery",
                         "tf": 10
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "u": {
+            "docs": {},
+            "p": {
+              "docs": {},
+              "p": {
+                "docs": {},
+                "o": {
+                  "docs": {},
+                  "r": {
+                    "docs": {},
+                    "t": {
+                      "docs": {
+                        "Router.html": {
+                          "ref": "Router.html",
+                          "tf": 2.083333333333333
+                        }
                       }
                     }
                   }
@@ -1292,7 +1228,7 @@ window.lunrData = {
                   "docs": {
                     "History.html": {
                       "ref": "History.html",
-                      "tf": 2.1739130434782608
+                      "tf": 4.166666666666666
                     }
                   }
                 }
@@ -1566,47 +1502,13 @@ window.lunrData = {
           "docs": {},
           "a": {
             "docs": {},
-            "c": {
-              "docs": {},
-              "k": {
-                "docs": {
-                  "History.html": {
-                    "ref": "History.html",
-                    "tf": 2.1739130434782608
-                  }
-                },
-                "b": {
-                  "docs": {},
-                  "o": {
-                    "docs": {},
-                    "n": {
-                      "docs": {},
-                      "e": {
-                        "docs": {},
-                        ".": {
-                          "docs": {},
-                          "j": {
-                            "docs": {
-                              "History.html": {
-                                "ref": "History.html",
-                                "tf": 2.1739130434782608
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            },
             "s": {
               "docs": {},
               "e": {
                 "docs": {
                   "History.html": {
                     "ref": "History.html",
-                    "tf": 2.1739130434782608
+                    "tf": 4.166666666666666
                   }
                 }
               }
@@ -1626,7 +1528,7 @@ window.lunrData = {
                       "docs": {
                         "History.html": {
                           "ref": "History.html",
-                          "tf": 4.3478260869565215
+                          "tf": 4.166666666666666
                         },
                         "Router.html#startHistory": {
                           "ref": "Router.html#startHistory",
@@ -1656,31 +1558,6 @@ window.lunrData = {
         },
         "f": {
           "docs": {},
-          "a": {
-            "docs": {},
-            "l": {
-              "docs": {},
-              "l": {
-                "docs": {
-                  "History.html": {
-                    "ref": "History.html",
-                    "tf": 2.1739130434782608
-                  }
-                }
-              }
-            },
-            "u": {
-              "docs": {},
-              "x": {
-                "docs": {
-                  "Router.html": {
-                    "ref": "Router.html",
-                    "tf": 2.083333333333333
-                  }
-                }
-              }
-            }
-          },
           "r": {
             "docs": {},
             "a": {
@@ -1697,7 +1574,7 @@ window.lunrData = {
                         "docs": {
                           "History.html": {
                             "ref": "History.html",
-                            "tf": 2.1739130434782608
+                            "tf": 4.166666666666666
                           },
                           "Router.html#navigate": {
                             "ref": "Router.html#navigate",
@@ -1706,6 +1583,20 @@ window.lunrData = {
                         }
                       }
                     }
+                  }
+                }
+              }
+            }
+          },
+          "a": {
+            "docs": {},
+            "u": {
+              "docs": {},
+              "x": {
+                "docs": {
+                  "Router.html": {
+                    "ref": "Router.html",
+                    "tf": 2.083333333333333
                   }
                 }
               }
@@ -1806,7 +1697,7 @@ window.lunrData = {
                   "docs": {
                     "History.html": {
                       "ref": "History.html",
-                      "tf": 2.1739130434782608
+                      "tf": 4.166666666666666
                     }
                   },
                   "e": {
@@ -1849,7 +1740,7 @@ window.lunrData = {
                       "docs": {
                         "History.html": {
                           "ref": "History.html",
-                          "tf": 1902.1739130434783
+                          "tf": 1904.1666666666667
                         },
                         "Router.html#navigate": {
                           "ref": "Router.html#navigate",
@@ -1879,7 +1770,7 @@ window.lunrData = {
                   "docs": {
                     "History.html": {
                       "ref": "History.html",
-                      "tf": 2.1739130434782608
+                      "tf": 4.166666666666666
                     }
                   }
                 }
@@ -1945,17 +1836,6 @@ window.lunrData = {
         },
         "o": {
           "docs": {},
-          "l": {
-            "docs": {},
-            "d": {
-              "docs": {
-                "History.html": {
-                  "ref": "History.html",
-                  "tf": 2.1739130434782608
-                }
-              }
-            }
-          },
           "n": {
             "docs": {
               "Router.html": {
@@ -1983,7 +1863,7 @@ window.lunrData = {
                               "docs": {
                                 "History.html": {
                                   "ref": "History.html",
-                                  "tf": 2.1739130434782608
+                                  "tf": 4.166666666666666
                                 }
                               }
                             }
@@ -2064,49 +1944,6 @@ window.lunrData = {
             }
           }
         },
-        "t": {
-          "docs": {},
-          "h": {
-            "docs": {},
-            "a": {
-              "docs": {},
-              "n": {
-                "docs": {},
-                "k": {
-                  "docs": {
-                    "History.html": {
-                      "ref": "History.html",
-                      "tf": 2.1739130434782608
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "r": {
-            "docs": {},
-            "a": {
-              "docs": {},
-              "n": {
-                "docs": {},
-                "s": {
-                  "docs": {},
-                  "i": {
-                    "docs": {},
-                    "t": {
-                      "docs": {
-                        "Router.html": {
-                          "ref": "Router.html",
-                          "tf": 2.083333333333333
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
         "u": {
           "docs": {},
           "r": {
@@ -2115,7 +1952,7 @@ window.lunrData = {
               "docs": {
                 "History.html": {
                   "ref": "History.html",
-                  "tf": 4.3478260869565215
+                  "tf": 8.333333333333332
                 },
                 "Router.html": {
                   "ref": "Router.html",
@@ -2204,6 +2041,32 @@ window.lunrData = {
             }
           }
         },
+        "t": {
+          "docs": {},
+          "r": {
+            "docs": {},
+            "a": {
+              "docs": {},
+              "n": {
+                "docs": {},
+                "s": {
+                  "docs": {},
+                  "i": {
+                    "docs": {},
+                    "t": {
+                      "docs": {
+                        "Router.html": {
+                          "ref": "Router.html",
+                          "tf": 2.083333333333333
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
         "w": {
           "docs": {},
           "e": {
@@ -2284,15 +2147,13 @@ window.lunrData = {
           }
         }
       },
-      "length": 137
+      "length": 127
     },
     "corpusTokens": [
       "action",
       "api",
       "arg",
       "augmented.j",
-      "back",
-      "backbone.j",
       "base",
       "bind",
       "browser",
@@ -2310,7 +2171,6 @@ window.lunrData = {
       "event",
       "excel",
       "execut",
-      "fall",
       "faux",
       "fire",
       "flag",
@@ -2321,10 +2181,8 @@ window.lunrData = {
       "handler",
       "hash",
       "histori",
-      "ie",
       "index",
       "initi",
-      "inspir",
       "last",
       "list",
       "list:class",
@@ -2339,12 +2197,10 @@ window.lunrData = {
       "match",
       "member",
       "name",
-      "natch",
       "navig",
       "new",
       "next",
       "object",
-      "old",
       "on",
       "onhashchang",
       "option",
@@ -2354,7 +2210,6 @@ window.lunrData = {
       "parsequeri",
       "pass",
       "place",
-      "poll",
       "post",
       "pre",
       "present",
@@ -2390,7 +2245,6 @@ window.lunrData = {
       "static",
       "string",
       "support",
-      "thank",
       "transit",
       "url",
       "us",
@@ -2445,7 +2299,7 @@ window.lunrData = {
       "name": "History",
       "tags": "History",
       "summary": "",
-      "description": "Handles cross-browser history management, based on either pushState and real URLs, or onhashchange and URL fragments. If the browser supports neither (old IE, natch), falls back to polling. Inspired By Backbone.js - Thank you! 😍",
+      "description": "Handles cross-browser history management, based on either pushState and real URLs, or onhashchange and URL fragments.",
       "body": ""
     },
     "Router.html": {

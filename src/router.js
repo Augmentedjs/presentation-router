@@ -22,7 +22,7 @@ const escapeRegExp  = /[\-{}\[\]+?.,\\\^$|#\s]/g;
  *    "routes": { ... },
  *    "transition": { "in": #, "out": # }
  * });
- * @extends Augmented.Object
+ * @extends AugmentedObject
  */
 class Router extends AugmentedObject {
   constructor(options) {

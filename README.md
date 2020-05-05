@@ -37,7 +37,7 @@ Augmented.js Presentation Router Module
 
 ## Router
 
-**Extends Augmented.Object**
+**Extends AugmentedObject**
 
 Routers map faux-URLs to actions, and fire events when routes are
 matched. Creating a new one sets its `routes` hash, if not set statically.<br/>
@@ -144,14 +144,12 @@ Returns **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/G
 
 ## History
 
-**Extends Augmented.Object**
+**Extends AugmentedObject**
 
 Handles cross-browser history management, based on either
 [pushState](http://diveintohtml5.info/history.html) and real URLs, or
 [onhashchange](https://developer.mozilla.org/en-US/docs/DOM/window.onhashchange)
-and URL fragments. If the browser supports neither (old IE, natch),
-falls back to polling.
-<br/>Inspired By Backbone.js - Thank you! <span>😍</span>
+and URL fragments.
 
 ### Parameters
 
