@@ -1,6 +1,6 @@
 {
   "name": "presentation-router",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "The Augmented.js Next - Presentation Router Module.",
   "main": "dist/presentation-router.js",
   "scripts": {
@@ -33,7 +33,7 @@
     "documentation": "^13.0.2",
     "foodoc": "0.0.9",
     "jsdoc": "^3.6.4",
-    "jsdom": "^16.2.2",
+    "jsdom": "^16.3.0",
     "mocha": "^8.0.1",
     "mocha-jsdom": "^2.0.0",
     "webpack": "^4.43.0",
@@ -44,7 +44,7 @@
     "lodash.map": "^4.6.0",
     "next-core-object": "^3.0.0",
     "next-core-utilities": "^2.9.0",
-    "presentation-dom": "^2.8.2"
+    "presentation-dom": "^3.0.0"
   },
   "bugs": {
     "url": "https://github.com/Augmentedjs/presentation-router/issues"
