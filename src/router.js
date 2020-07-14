@@ -1,7 +1,7 @@
 import { AugmentedObject } from "next-core-object";
 import { result, isFunction } from "next-core-utilities";
 import History from "./history.js";
-import Dom from "presentation-dom";
+import { Dom } from "presentation-dom";
 
 const _map = require("lodash.map");
 const _isRegExp = require("lodash.isregexp");
