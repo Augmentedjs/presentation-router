@@ -1,6 +1,6 @@
 {
   "name": "presentation-router",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "description": "The Augmented.js Next - Presentation Router Module.",
   "main": "dist/presentation-router.js",
   "scripts": {
@@ -25,9 +25,9 @@
   "author": "Bob Warren <jedi.master@augmentedjs.com> (http://www.augmentedjs.com)",
   "license": "Apache-2.0",
   "devDependencies": {
-    "@babel/core": "^7.10.4",
+    "@babel/core": "^7.10.5",
     "@babel/preset-env": "^7.10.4",
-    "@babel/register": "^7.10.4",
+    "@babel/register": "^7.10.5",
     "babel-loader": "^8.1.0",
     "chai": "^4.2.0",
     "documentation": "^13.0.2",
@@ -44,7 +44,7 @@
     "lodash.map": "^4.6.0",
     "next-core-object": "^3.0.0",
     "next-core-utilities": "^2.9.0",
-    "presentation-dom": "^3.0.0"
+    "presentation-dom": "^3.0.3"
   },
   "bugs": {
     "url": "https://github.com/Augmentedjs/presentation-router/issues"
