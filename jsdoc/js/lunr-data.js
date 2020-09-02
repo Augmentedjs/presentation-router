@@ -58,20 +58,6 @@ window.lunrData = {
           "list",
           "list:class"
         ],
-        "History.html": [
-          "base",
-          "browser",
-          "class",
-          "cross",
-          "fragment",
-          "handl",
-          "histori",
-          "manag",
-          "onhashchang",
-          "pushstat",
-          "real",
-          "url"
-        ],
         "Router.html": [
           "action",
           "class",
@@ -193,6 +179,20 @@ window.lunrData = {
           "start",
           "starthistori",
           "us"
+        ],
+        "History.html": [
+          "base",
+          "browser",
+          "class",
+          "cross",
+          "fragment",
+          "handl",
+          "histori",
+          "manag",
+          "onhashchang",
+          "pushstat",
+          "real",
+          "url"
         ]
       },
       "length": 14
@@ -501,32 +501,6 @@ window.lunrData = {
               }
             }
           },
-          "u": {
-            "docs": {},
-            "s": {
-              "docs": {},
-              "h": {
-                "docs": {},
-                "s": {
-                  "docs": {},
-                  "t": {
-                    "docs": {},
-                    "a": {
-                      "docs": {},
-                      "t": {
-                        "docs": {
-                          "History.html": {
-                            "ref": "History.html",
-                            "tf": 4.166666666666666
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
           "a": {
             "docs": {},
             "s": {
@@ -618,6 +592,32 @@ window.lunrData = {
                   "Router.html#execute": {
                     "ref": "Router.html#execute",
                     "tf": 3.8461538461538463
+                  }
+                }
+              }
+            }
+          },
+          "u": {
+            "docs": {},
+            "s": {
+              "docs": {},
+              "h": {
+                "docs": {},
+                "s": {
+                  "docs": {},
+                  "t": {
+                    "docs": {},
+                    "a": {
+                      "docs": {},
+                      "t": {
+                        "docs": {
+                          "History.html": {
+                            "ref": "History.html",
+                            "tf": 4.166666666666666
+                          }
+                        }
+                      }
+                    }
                   }
                 }
               }
@@ -1177,12 +1177,12 @@ window.lunrData = {
                       "ref": "list_class.html",
                       "tf": 635
                     },
-                    "History.html": {
-                      "ref": "History.html",
-                      "tf": 110
-                    },
                     "Router.html": {
                       "ref": "Router.html",
+                      "tf": 110
+                    },
+                    "History.html": {
+                      "ref": "History.html",
                       "tf": 110
                     }
                   }
@@ -1218,37 +1218,6 @@ window.lunrData = {
               }
             }
           },
-          "r": {
-            "docs": {},
-            "o": {
-              "docs": {},
-              "s": {
-                "docs": {},
-                "s": {
-                  "docs": {
-                    "History.html": {
-                      "ref": "History.html",
-                      "tf": 4.166666666666666
-                    }
-                  }
-                }
-              }
-            },
-            "e": {
-              "docs": {},
-              "a": {
-                "docs": {},
-                "t": {
-                  "docs": {
-                    "Router.html": {
-                      "ref": "Router.html",
-                      "tf": 2.083333333333333
-                    }
-                  }
-                }
-              }
-            }
-          },
           "o": {
             "docs": {},
             "n": {
@@ -1278,6 +1247,37 @@ window.lunrData = {
                           }
                         }
                       }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "r": {
+            "docs": {},
+            "e": {
+              "docs": {},
+              "a": {
+                "docs": {},
+                "t": {
+                  "docs": {
+                    "Router.html": {
+                      "ref": "Router.html",
+                      "tf": 2.083333333333333
+                    }
+                  }
+                }
+              }
+            },
+            "o": {
+              "docs": {},
+              "s": {
+                "docs": {},
+                "s": {
+                  "docs": {
+                    "History.html": {
+                      "ref": "History.html",
+                      "tf": 4.166666666666666
                     }
                   }
                 }
@@ -1498,58 +1498,71 @@ window.lunrData = {
             }
           }
         },
-        "b": {
+        "e": {
           "docs": {},
-          "a": {
+          "v": {
             "docs": {},
-            "s": {
+            "e": {
               "docs": {},
-              "e": {
-                "docs": {
-                  "History.html": {
-                    "ref": "History.html",
-                    "tf": 4.166666666666666
-                  }
-                }
-              }
-            }
-          },
-          "r": {
-            "docs": {},
-            "o": {
-              "docs": {},
-              "w": {
+              "n": {
                 "docs": {},
-                "s": {
-                  "docs": {},
-                  "e": {
-                    "docs": {},
-                    "r": {
-                      "docs": {
-                        "History.html": {
-                          "ref": "History.html",
-                          "tf": 4.166666666666666
-                        },
-                        "Router.html#startHistory": {
-                          "ref": "Router.html#startHistory",
-                          "tf": 8.333333333333332
-                        }
-                      }
+                "t": {
+                  "docs": {
+                    "Router.html": {
+                      "ref": "Router.html",
+                      "tf": 2.083333333333333
                     }
                   }
                 }
               }
             }
           },
-          "i": {
+          "m": {
             "docs": {},
-            "n": {
+            "p": {
               "docs": {},
-              "d": {
-                "docs": {
-                  "Router.html#route": {
-                    "ref": "Router.html#route",
-                    "tf": 8.333333333333332
+              "t": {
+                "docs": {},
+                "i": {
+                  "docs": {
+                    "Router.html#initialize": {
+                      "ref": "Router.html#initialize",
+                      "tf": 7.142857142857142
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "x": {
+            "docs": {},
+            "c": {
+              "docs": {},
+              "e": {
+                "docs": {},
+                "l": {
+                  "docs": {
+                    "Router.html#execute": {
+                      "ref": "Router.html#execute",
+                      "tf": 3.8461538461538463
+                    }
+                  }
+                }
+              }
+            },
+            "e": {
+              "docs": {},
+              "c": {
+                "docs": {},
+                "u": {
+                  "docs": {},
+                  "t": {
+                    "docs": {
+                      "Router.html#execute": {
+                        "ref": "Router.html#execute",
+                        "tf": 687.1794871794872
+                      }
+                    }
                   }
                 }
               }
@@ -1558,36 +1571,6 @@ window.lunrData = {
         },
         "f": {
           "docs": {},
-          "r": {
-            "docs": {},
-            "a": {
-              "docs": {},
-              "g": {
-                "docs": {},
-                "m": {
-                  "docs": {},
-                  "e": {
-                    "docs": {},
-                    "n": {
-                      "docs": {},
-                      "t": {
-                        "docs": {
-                          "History.html": {
-                            "ref": "History.html",
-                            "tf": 4.166666666666666
-                          },
-                          "Router.html#navigate": {
-                            "ref": "Router.html#navigate",
-                            "tf": 41.66666666666666
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
           "a": {
             "docs": {},
             "u": {
@@ -1683,12 +1666,53 @@ window.lunrData = {
                 }
               }
             }
+          },
+          "r": {
+            "docs": {},
+            "a": {
+              "docs": {},
+              "g": {
+                "docs": {},
+                "m": {
+                  "docs": {},
+                  "e": {
+                    "docs": {},
+                    "n": {
+                      "docs": {},
+                      "t": {
+                        "docs": {
+                          "Router.html#navigate": {
+                            "ref": "Router.html#navigate",
+                            "tf": 41.66666666666666
+                          },
+                          "History.html": {
+                            "ref": "History.html",
+                            "tf": 4.166666666666666
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
           }
         },
         "h": {
           "docs": {},
           "a": {
             "docs": {},
+            "s": {
+              "docs": {},
+              "h": {
+                "docs": {
+                  "Router.html": {
+                    "ref": "Router.html",
+                    "tf": 2.083333333333333
+                  }
+                }
+              }
+            },
             "n": {
               "docs": {},
               "d": {
@@ -1713,17 +1737,6 @@ window.lunrData = {
                   }
                 }
               }
-            },
-            "s": {
-              "docs": {},
-              "h": {
-                "docs": {
-                  "Router.html": {
-                    "ref": "Router.html",
-                    "tf": 2.083333333333333
-                  }
-                }
-              }
             }
           },
           "i": {
@@ -1738,10 +1751,6 @@ window.lunrData = {
                     "docs": {},
                     "i": {
                       "docs": {
-                        "History.html": {
-                          "ref": "History.html",
-                          "tf": 1904.1666666666667
-                        },
                         "Router.html#navigate": {
                           "ref": "Router.html#navigate",
                           "tf": 16.666666666666664
@@ -1749,6 +1758,10 @@ window.lunrData = {
                         "Router.html#startHistory": {
                           "ref": "Router.html#startHistory",
                           "tf": 16.666666666666664
+                        },
+                        "History.html": {
+                          "ref": "History.html",
+                          "tf": 1904.1666666666667
                         }
                       }
                     }
@@ -1762,34 +1775,6 @@ window.lunrData = {
           "docs": {},
           "a": {
             "docs": {},
-            "n": {
-              "docs": {},
-              "a": {
-                "docs": {},
-                "g": {
-                  "docs": {
-                    "History.html": {
-                      "ref": "History.html",
-                      "tf": 4.166666666666666
-                    }
-                  }
-                }
-              },
-              "u": {
-                "docs": {},
-                "a": {
-                  "docs": {},
-                  "l": {
-                    "docs": {
-                      "Router.html#route": {
-                        "ref": "Router.html#route",
-                        "tf": 8.333333333333332
-                      }
-                    }
-                  }
-                }
-              }
-            },
             "p": {
               "docs": {
                 "Router.html": {
@@ -1807,6 +1792,34 @@ window.lunrData = {
                     "Router.html": {
                       "ref": "Router.html",
                       "tf": 2.083333333333333
+                    }
+                  }
+                }
+              }
+            },
+            "n": {
+              "docs": {},
+              "u": {
+                "docs": {},
+                "a": {
+                  "docs": {},
+                  "l": {
+                    "docs": {
+                      "Router.html#route": {
+                        "ref": "Router.html#route",
+                        "tf": 8.333333333333332
+                      }
+                    }
+                  }
+                }
+              },
+              "a": {
+                "docs": {},
+                "g": {
+                  "docs": {
+                    "History.html": {
+                      "ref": "History.html",
+                      "tf": 4.166666666666666
                     }
                   }
                 }
@@ -1944,103 +1957,6 @@ window.lunrData = {
             }
           }
         },
-        "u": {
-          "docs": {},
-          "r": {
-            "docs": {},
-            "l": {
-              "docs": {
-                "History.html": {
-                  "ref": "History.html",
-                  "tf": 8.333333333333332
-                },
-                "Router.html": {
-                  "ref": "Router.html",
-                  "tf": 2.083333333333333
-                }
-              }
-            }
-          },
-          "s": {
-            "docs": {
-              "Router.html#startHistory": {
-                "ref": "Router.html#startHistory",
-                "tf": 8.333333333333332
-              }
-            }
-          }
-        },
-        "e": {
-          "docs": {},
-          "v": {
-            "docs": {},
-            "e": {
-              "docs": {},
-              "n": {
-                "docs": {},
-                "t": {
-                  "docs": {
-                    "Router.html": {
-                      "ref": "Router.html",
-                      "tf": 2.083333333333333
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "m": {
-            "docs": {},
-            "p": {
-              "docs": {},
-              "t": {
-                "docs": {},
-                "i": {
-                  "docs": {
-                    "Router.html#initialize": {
-                      "ref": "Router.html#initialize",
-                      "tf": 7.142857142857142
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "x": {
-            "docs": {},
-            "c": {
-              "docs": {},
-              "e": {
-                "docs": {},
-                "l": {
-                  "docs": {
-                    "Router.html#execute": {
-                      "ref": "Router.html#execute",
-                      "tf": 3.8461538461538463
-                    }
-                  }
-                }
-              }
-            },
-            "e": {
-              "docs": {},
-              "c": {
-                "docs": {},
-                "u": {
-                  "docs": {},
-                  "t": {
-                    "docs": {
-                      "Router.html#execute": {
-                        "ref": "Router.html#execute",
-                        "tf": 687.1794871794872
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
         "t": {
           "docs": {},
           "r": {
@@ -2063,6 +1979,32 @@ window.lunrData = {
                     }
                   }
                 }
+              }
+            }
+          }
+        },
+        "u": {
+          "docs": {},
+          "r": {
+            "docs": {},
+            "l": {
+              "docs": {
+                "Router.html": {
+                  "ref": "Router.html",
+                  "tf": 2.083333333333333
+                },
+                "History.html": {
+                  "ref": "History.html",
+                  "tf": 8.333333333333332
+                }
+              }
+            }
+          },
+          "s": {
+            "docs": {
+              "Router.html#startHistory": {
+                "ref": "Router.html#startHistory",
+                "tf": 8.333333333333332
               }
             }
           }
@@ -2140,6 +2082,64 @@ window.lunrData = {
                         }
                       }
                     }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "b": {
+          "docs": {},
+          "i": {
+            "docs": {},
+            "n": {
+              "docs": {},
+              "d": {
+                "docs": {
+                  "Router.html#route": {
+                    "ref": "Router.html#route",
+                    "tf": 8.333333333333332
+                  }
+                }
+              }
+            }
+          },
+          "r": {
+            "docs": {},
+            "o": {
+              "docs": {},
+              "w": {
+                "docs": {},
+                "s": {
+                  "docs": {},
+                  "e": {
+                    "docs": {},
+                    "r": {
+                      "docs": {
+                        "Router.html#startHistory": {
+                          "ref": "Router.html#startHistory",
+                          "tf": 8.333333333333332
+                        },
+                        "History.html": {
+                          "ref": "History.html",
+                          "tf": 4.166666666666666
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "a": {
+            "docs": {},
+            "s": {
+              "docs": {},
+              "e": {
+                "docs": {
+                  "History.html": {
+                    "ref": "History.html",
+                    "tf": 4.166666666666666
                   }
                 }
               }
@@ -2291,17 +2291,6 @@ window.lunrData = {
       "description": "",
       "body": ""
     },
-    "History.html": {
-      "id": "History.html",
-      "kind": "class",
-      "title": "History",
-      "longname": "History",
-      "name": "History",
-      "tags": "History",
-      "summary": "",
-      "description": "Handles cross-browser history management, based on either pushState and real URLs, or onhashchange and URL fragments.",
-      "body": ""
-    },
     "Router.html": {
       "id": "Router.html",
       "kind": "class",
@@ -2402,6 +2391,17 @@ window.lunrData = {
       "tags": "Router#startHistory startHistory",
       "summary": "",
       "description": "Start the history using browser History API"
+    },
+    "History.html": {
+      "id": "History.html",
+      "kind": "class",
+      "title": "History",
+      "longname": "History",
+      "name": "History",
+      "tags": "History",
+      "summary": "",
+      "description": "Handles cross-browser history management, based on either pushState and real URLs, or onhashchange and URL fragments.",
+      "body": ""
     }
   }
 };

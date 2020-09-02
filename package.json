@@ -1,19 +1,18 @@
 {
   "name": "presentation-router",
-  "version": "3.1.0",
+  "version": "3.2.0",
   "description": "The Augmented.js Next - Presentation Router Module.",
   "main": "dist/presentation-router.js",
   "scripts": {
-    "dev": "npm run lodash && NODE_ENV=development webpack --mode development --progress",
-    "build": "npm run lodash && NODE_ENV=production webpack --mode production --progress",
+    "dev": "NODE_ENV=development webpack --mode development --progress",
+    "build": "NODE_ENV=production webpack --mode production --progress",
     "test": "mocha --require test/helper.js -c test/*Spec.js",
     "start": "node index.js",
     "docs": "rm -rf jsdoc && jsdoc ./src -r -d ./jsdoc/ -R ./README.md -t ./node_modules/foodoc/template -c ./jsdoc.conf.json -P ./package.json",
     "readme": "./node_modules/documentation/bin/documentation.js readme ./src/index.js -f md --section=API",
     "clean": "rm -rf node_modules",
     "reinstall": "npm run clean && npm install",
-    "rebuild": "npm run clean && npm install && npm run build",
-    "lodash": "lodash strict exports=umd include=defaults,isEqual -o ./lib/lodash.custom.js -d"
+    "rebuild": "npm run clean && npm install && npm run build"
   },
   "repository": {
     "type": "git",
@@ -37,18 +36,14 @@
     "foodoc": "0.0.9",
     "jsdoc": "^3.6.5",
     "jsdom": "^16.4.0",
-    "lodash-cli": "^4.17.5",
     "mocha": "^8.1.3",
     "mocha-jsdom": "^2.0.0",
+    "next-core-utilities": "^3.3.0",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12"
   },
   "dependencies": {
-    "lodash.isregexp": "^4.0.1",
-    "lodash.map": "^4.6.0",
-    "next-core-object": "^3.0.0",
-    "next-core-utilities": "^3.0.0",
-    "presentation-dom": "^3.0.3"
+    "next-core-object": "^3.0.0"
   },
   "bugs": {
     "url": "https://github.com/Augmentedjs/presentation-router/issues"

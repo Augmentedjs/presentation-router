@@ -32,8 +32,11 @@ Augmented.js Presentation Router Module
         -   [Parameters](#parameters-8)
 -   [History](#history)
     -   [Parameters](#parameters-9)
--   [serialize](#serialize)
+-   [result](#result)
+-   [isFunction](#isfunction)
     -   [Parameters](#parameters-10)
+-   [serialize](#serialize)
+    -   [Parameters](#parameters-11)
 
 ## Router
 
@@ -154,6 +157,25 @@ and URL fragments.
 ### Parameters
 
 -   `options`  
+
+## result
+
+Augmented.result - returns named property in an object
+simular to underscore .result method
+
+Returns **any** named property in an object
+
+## isFunction
+
+isFunction -
+returns true if called name is a function
+simular to jQuery .isFunction method
+
+### Parameters
+
+-   `name` **[function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function)** The name of the function to test
+
+Returns **any** true if called name is a function
 
 ## serialize
 

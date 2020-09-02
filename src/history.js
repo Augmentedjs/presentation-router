@@ -1,5 +1,7 @@
 import { AugmentedObject } from "next-core-object";
-import { extend } from "next-core-utilities";
+import { extend } from "./utilities.js";
+
+
 
 //const _some = require("lodash.some");
 

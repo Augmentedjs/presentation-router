@@ -1,10 +1,6 @@
 import { AugmentedObject } from "next-core-object";
-import { result, isFunction } from "next-core-utilities";
+import { addClass, removeClass, isRegExp, result, isFunction } from "./utilities.js";
 import History from "./history.js";
-import { Dom } from "presentation-dom";
-
-const _map = require("lodash.map");
-const _isRegExp = require("lodash.isregexp");
 
 // Cached regular expressions for matching named param parts and splatted
 // parts of route strings.
@@ -79,8 +75,7 @@ class Router extends AugmentedObject {
         if (this.transition && this.transition.in) {
           //await console.debug("have old view", (oldView) );
           if (oldView) {
-
-            await Dom.addClass(view.el, "transition-out");
+            await addClass(view.el, "transition-out");
             //await console.debug("calling cleanup");
             await this.cleanup();
             //await console.debug("Just cleaned up");
@@ -95,7 +90,7 @@ class Router extends AugmentedObject {
               // wait
               //console.debug("waiting...");
               //console.log("el", view.el);
-              Dom.removeClass(view.el, "transition-out");
+              removeClass(view.el, "transition-out");
               view.render();
             }, this.transition.in);
 
@@ -183,7 +178,7 @@ class Router extends AugmentedObject {
    * });
    */
   route(route, name, callback) {
-    if (!_isRegExp(route)) {
+    if (!isRegExp(route)) {
       route = this._routeToRegExp(route);
     }
     if (isFunction(name)) {
@@ -271,14 +266,17 @@ class Router extends AugmentedObject {
   // extracted decoded parameters. Empty or unmatched parameters will be
   // treated as `null` to normalize cross-browser behavior.
   _extractParameters(route, fragment) {
-    let params = route.exec(fragment).slice(1);
-    return _map(params, (param, i) => {
-      // Don't decode the search params.
-      if (i === params.length - 1) {
-        return param || null;
-      }
-      return param ? decodeURIComponent(param) : null;
-    });
+    const params = route.exec(fragment).slice(1);
+    if (Array.isArray(params)) {
+      return params.map((param, i) => {
+        // Don't decode the search params.
+        if (i === params.length - 1) {
+          return param || null;
+        }
+        return param ? decodeURIComponent(param) : null;
+      });
+    }
+    return null;
   };
 };
 

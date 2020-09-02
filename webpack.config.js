@@ -42,24 +42,6 @@ module.exports = {
       commonjs2: "next-core-utilities",
       amd: "next-core-utilities",
       root: "next-core-utilities"
-    },
-    "presentation-dom": {
-      commonjs: "presentation-dom",
-      commonjs2: "presentation-dom",
-      amd: "presentation-dom",
-      root: "presentation-dom"
-    },
-    "lodash.map": {
-      commonjs: "lodash.map",
-      commonjs2: "lodash.map",
-      amd: "lodash.map",
-      root: "lodash.map"
-    },
-    "lodash.isregexp": {
-      commonjs: "lodash.isregexp",
-      commonjs2: "lodash.isregexp",
-      amd: "lodash.isregexp",
-      root: "lodash.isregexp"
     }
   },
   stats: "errors-only",
