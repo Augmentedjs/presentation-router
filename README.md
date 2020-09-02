@@ -30,10 +30,10 @@ Augmented.js Presentation Router Module
         -   [Parameters](#parameters-7)
     -   [parseQuery](#parsequery)
         -   [Parameters](#parameters-8)
--   [History](#history)
-    -   [Parameters](#parameters-9)
 -   [result](#result)
 -   [isFunction](#isfunction)
+    -   [Parameters](#parameters-9)
+-   [History](#history)
     -   [Parameters](#parameters-10)
 -   [serialize](#serialize)
     -   [Parameters](#parameters-11)
@@ -145,19 +145,6 @@ Parse a query string and return as an object
 
 Returns **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** Object of the query params
 
-## History
-
-**Extends AugmentedObject**
-
-Handles cross-browser history management, based on either
-[pushState](http://diveintohtml5.info/history.html) and real URLs, or
-[onhashchange](https://developer.mozilla.org/en-US/docs/DOM/window.onhashchange)
-and URL fragments.
-
-### Parameters
-
--   `options`  
-
 ## result
 
 Augmented.result - returns named property in an object
@@ -176,6 +163,19 @@ simular to jQuery .isFunction method
 -   `name` **[function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function)** The name of the function to test
 
 Returns **any** true if called name is a function
+
+## History
+
+**Extends AugmentedObject**
+
+Handles cross-browser history management, based on either
+[pushState](http://diveintohtml5.info/history.html) and real URLs, or
+[onhashchange](https://developer.mozilla.org/en-US/docs/DOM/window.onhashchange)
+and URL fragments.
+
+### Parameters
+
+-   `options`  
 
 ## serialize
 

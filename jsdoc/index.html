@@ -154,13 +154,13 @@
 </li>
 </ul>
 </li>
-<li><a href="#history">History</a>
+<li><a href="#result">result</a></li>
+<li><a href="#isfunction">isFunction</a>
 <ul>
 <li><a href="#parameters-9">Parameters</a></li>
 </ul>
 </li>
-<li><a href="#result">result</a></li>
-<li><a href="#isfunction">isFunction</a>
+<li><a href="#history">History</a>
 <ul>
 <li><a href="#parameters-10">Parameters</a></li>
 </ul>
@@ -251,16 +251,6 @@ excellent place to do pre-route setup or post-route cleanup.</p>
 <li><code>queryString</code> <strong><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></strong></li>
 </ul>
 <p>Returns <strong><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></strong> Object of the query params</p>
-<h2>History</h2>
-<p><strong>Extends AugmentedObject</strong></p>
-<p>Handles cross-browser history management, based on either<br>
-<a href="http://diveintohtml5.info/history.html">pushState</a> and real URLs, or<br>
-<a href="https://developer.mozilla.org/en-US/docs/DOM/window.onhashchange">onhashchange</a><br>
-and URL fragments.</p>
-<h3>Parameters</h3>
-<ul>
-<li><code>options</code></li>
-</ul>
 <h2>result</h2>
 <p>Augmented.result - returns named property in an object<br>
 simular to underscore .result method</p>
@@ -274,6 +264,16 @@ simular to jQuery .isFunction method</p>
 <li><code>name</code> <strong><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">function</a></strong> The name of the function to test</li>
 </ul>
 <p>Returns <strong>any</strong> true if called name is a function</p>
+<h2>History</h2>
+<p><strong>Extends AugmentedObject</strong></p>
+<p>Handles cross-browser history management, based on either<br>
+<a href="http://diveintohtml5.info/history.html">pushState</a> and real URLs, or<br>
+<a href="https://developer.mozilla.org/en-US/docs/DOM/window.onhashchange">onhashchange</a><br>
+and URL fragments.</p>
+<h3>Parameters</h3>
+<ul>
+<li><code>options</code></li>
+</ul>
 <h2>serialize</h2>
 <p>Serialize object into query parameters url string</p>
 <h3>Parameters</h3>

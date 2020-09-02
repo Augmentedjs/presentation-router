@@ -1,6 +1,6 @@
 {
   "name": "presentation-router",
-  "version": "3.2.0",
+  "version": "3.2.1",
   "description": "The Augmented.js Next - Presentation Router Module.",
   "main": "dist/presentation-router.js",
   "scripts": {
@@ -43,7 +43,7 @@
     "webpack-cli": "^3.3.12"
   },
   "dependencies": {
-    "next-core-object": "^3.0.0"
+    "next-core-object": "^3.1.0"
   },
   "bugs": {
     "url": "https://github.com/Augmentedjs/presentation-router/issues"
