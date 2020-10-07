@@ -33,10 +33,12 @@ Augmented.js Presentation Router Module
 -   [result](#result)
 -   [isFunction](#isfunction)
     -   [Parameters](#parameters-9)
--   [History](#history)
+-   [isString](#isstring)
     -   [Parameters](#parameters-10)
--   [serialize](#serialize)
+-   [History](#history)
     -   [Parameters](#parameters-11)
+-   [serialize](#serialize)
+    -   [Parameters](#parameters-12)
 
 ## Router
 
@@ -163,6 +165,18 @@ simular to jQuery .isFunction method
 -   `name` **[function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function)** The name of the function to test
 
 Returns **any** true if called name is a function
+
+## isString
+
+isString -
+checks if a value is a String
+
+### Parameters
+
+-   `val`  
+-   `variable` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** to check
+
+Returns **[boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** true if value is a string
 
 ## History
 
