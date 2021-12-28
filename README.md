@@ -30,15 +30,10 @@ Augmented.js Presentation Router Module
         -   [Parameters](#parameters-7)
     -   [parseQuery](#parsequery)
         -   [Parameters](#parameters-8)
--   [result](#result)
--   [isFunction](#isfunction)
-    -   [Parameters](#parameters-9)
--   [isString](#isstring)
-    -   [Parameters](#parameters-10)
 -   [History](#history)
-    -   [Parameters](#parameters-11)
+    -   [Parameters](#parameters-9)
 -   [serialize](#serialize)
-    -   [Parameters](#parameters-12)
+    -   [Parameters](#parameters-10)
 
 ## Router
 
@@ -146,37 +141,6 @@ Parse a query string and return as an object
 -   `queryString` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** 
 
 Returns **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** Object of the query params
-
-## result
-
-Augmented.result - returns named property in an object
-simular to underscore .result method
-
-Returns **any** named property in an object
-
-## isFunction
-
-isFunction -
-returns true if called name is a function
-simular to jQuery .isFunction method
-
-### Parameters
-
--   `name` **[function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function)** The name of the function to test
-
-Returns **any** true if called name is a function
-
-## isString
-
-isString -
-checks if a value is a String
-
-### Parameters
-
--   `val`  
--   `variable` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** to check
-
-Returns **[boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** true if value is a string
 
 ## History
 
